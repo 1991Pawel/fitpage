@@ -9,3 +9,19 @@ query GetPostBySlug($slug: String!) {
 		}
 	}
 }
+query GetAllPosts {
+	posts {
+		title
+		tags
+		id
+		coverImage {
+			id
+			coverImagePost {
+				coverImage {
+					fileName
+					url
+				}
+			}
+		}
+	}
+}
