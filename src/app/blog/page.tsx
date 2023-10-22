@@ -16,10 +16,7 @@ export default async function Blog() {
 			<div>
 				{posts.map((post) => (
 					<div key={post.id}>
-						{" "}
-						{/* Dodaj klucz "key" */}
 						<div>{post.title}</div>
-						{/* Dodaj tag <img> do wyświetlenia obrazka */}
 						<img src={post.coverImage.coverImagePost[0]?.coverImage.url} alt={post.title} />
 					</div>
 				))}
