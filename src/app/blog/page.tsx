@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
+import Image from "next/image";
 import { type GetAllPostsQuery, GetAllPostsDocument } from "../../gql/graphql";
-
 import { getClient } from "../../lib/client";
 
 export default async function Blog() {
@@ -16,8 +16,12 @@ export default async function Blog() {
 			<div>
 				{posts.map((post) => (
 					<div key={post.id}>
-						<div>{post.title}</div>
-						<img src={post.coverImage.coverImagePost[0]?.coverImage.url} alt={post.title} />
+						<h2>{post.title}</h2>
+						<Image
+							src={post.coverImage.coverImagePost[0]?.coverImage.url ?? ""}
+							layout="fill"
+							alt={post.title}
+						/>
 					</div>
 				))}
 			</div>
