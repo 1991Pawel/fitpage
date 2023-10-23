@@ -9,8 +9,6 @@ export default async function Blog() {
 	});
 	const posts = data.posts;
 
-	// const postHtml = data?.post?.blogContent?.html;
-
 	return (
 		<main className="flex min-h-screen flex-col items-center gap-10 p-8">
 			{posts.map((post) => (
