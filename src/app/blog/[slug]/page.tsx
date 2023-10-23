@@ -1,7 +1,5 @@
-import { gql } from "@apollo/client";
-import { type GetPostBySlugQuery, GetPostBySlugDocument } from "../../../gql/graphql";
-
-import { getClient } from "../../../lib/client";
+import { getClient } from "@/lib/client";
+import { type GetPostBySlugQuery, GetPostBySlugDocument } from "@/gql/graphql";
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
 	const { data } = await getClient().query<GetPostBySlugQuery>({

@@ -1,8 +1,7 @@
-import { gql } from "@apollo/client";
 import Image from "next/image";
 import Link from "next/link";
-import { type GetAllPostsQuery, GetAllPostsDocument } from "../../gql/graphql";
-import { getClient } from "../../lib/client";
+import { type GetAllPostsQuery, GetAllPostsDocument } from "@/gql/graphql";
+import { getClient } from "@/lib/client";
 export default async function Blog() {
 	const { data } = await getClient().query<GetAllPostsQuery>({
 		query: GetAllPostsDocument,
