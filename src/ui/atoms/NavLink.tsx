@@ -8,8 +8,8 @@ type NavLinkProps = {
 
 export const NavLink = ({ href, name, count }: NavLinkProps) => {
 	return (
-		<Link href={href}>
-			<span>0{count}.</span>
+		<Link className="text-lg font-bold uppercase text-white" href={href}>
+			<span className="text-gray mr-1">0{count}.</span>
 			{name}
 		</Link>
 	);
