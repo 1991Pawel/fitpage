@@ -1,17 +1,19 @@
 "use client";
 import { type SyntheticEvent, useState } from "react";
 
-type FormValues = {
+interface EmailData {
 	email: string;
-	body: string;
-};
+	message: string;
+	subject: string;
+}
 
 export default function Contact() {
-	const [values, setValues] = useState<FormValues>({
+	const [values, setValues] = useState<EmailData>({
 		email: "",
-		body: "",
+		message: "",
+		subject: "Wiadomość z formularza",
 	});
-	const sendContactForm = async (data: FormValues) => {
+	const sendContactForm = async (data: EmailData) => {
 		try {
 			const request = await fetch("/api/contact", {
 				method: "POST",
@@ -34,8 +36,8 @@ export default function Contact() {
 		e.preventDefault();
 		const payload = {
 			email: values.email,
-			subject: "Wiadomość z formularza",
-			body: values.body,
+			subject: values.subject,
+			message: values.message,
 		};
 		await sendContactForm(payload);
 	};
@@ -51,28 +53,18 @@ export default function Contact() {
 
 	return (
 		<div className="flex min-h-screen flex-col items-center gap-10 p-8">
-			<form onSubmit={(event) => void onSubmit(event)}>
+			{JSON.stringify(values)}
+			<form autoComplete="off" onSubmit={(event) => void onSubmit(event)}>
 				<div>
-					<label
-						htmlFor="email
-				"
-					>
-						Email
-						<input onChange={handleChange} name="email" type="text" />
-					</label>
+					<label htmlFor="email">Email</label>
+					<input onChange={handleChange} id="email" name="email" type="text" />
 				</div>
 				<div>
-					<label
-						htmlFor="email
-				"
-					>
-						Wiadomość
-						<input onChange={handleChange} name="body" type="text" />
-					</label>
+					<label htmlFor="message">Wiadomość</label>
+					<input id="message" name="message" onChange={handleChange} type="text" />
 				</div>
-
 				<div>
-					<button>Wyslij</button>
+					<button>Wyślij</button>
 				</div>
 			</form>
 		</div>

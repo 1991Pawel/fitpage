@@ -2,8 +2,9 @@ import { type NextRequest, NextResponse } from "next/server";
 import { transporter, mailOptions } from "../../../lib/nodemailer";
 
 interface EmailData {
+	email: string;
+	message: string;
 	subject: string;
-	body: string;
 }
 export async function POST(request: NextRequest): Promise<Response> {
 	try {
@@ -12,7 +13,7 @@ export async function POST(request: NextRequest): Promise<Response> {
 		const res = await transporter.sendMail({
 			...mailOptions,
 			subject: json.subject,
-			text: json.body,
+			html: `<h1>Email od : ${json.email}</h1><p>${json.message}</p>`,
 		});
 		return NextResponse.json({ message: "ok", data: res }, { status: 200 });
 	} catch (error) {
