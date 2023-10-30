@@ -1,5 +1,4 @@
 import "./globals.css";
-import type { Metadata } from "next";
 
 import { Rajdhani } from "next/font/google";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
