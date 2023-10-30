@@ -1,5 +1,6 @@
 "use client";
 import { type SyntheticEvent, useState } from "react";
+import { sendContactForm } from "../../services";
 
 interface EmailData {
 	email: string;
@@ -13,25 +14,7 @@ export default function Contact() {
 		message: "",
 		subject: "Wiadomość z formularza",
 	});
-	const sendContactForm = async (data: EmailData) => {
-		try {
-			const request = await fetch("/api/contact", {
-				method: "POST",
-				body: JSON.stringify(data),
-				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
-				},
-			});
-			if (request.ok) {
-				alert("wyślany");
-			} else {
-				throw new Error("błąd");
-			}
-		} catch (error) {
-			throw new Error("błąd");
-		}
-	};
+
 	const onSubmit = async (e: SyntheticEvent) => {
 		e.preventDefault();
 		const payload = {
