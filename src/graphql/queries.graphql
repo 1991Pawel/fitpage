@@ -3,6 +3,7 @@ query GetPostBySlug($slug: String!) {
 		id
 		title
 		tags
+		seoDescription
 		publishedAt
 		coverImage {
 			id

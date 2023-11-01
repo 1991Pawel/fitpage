@@ -8,7 +8,7 @@ export const generateMetadata = async ({ params }: { params: { slug: string } })
 
 	return {
 		title: data?.post?.title,
-		descritpion: "description test",
+		description: `${data?.post?.seoDescription}`,
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/blog/${params.slug}`,
 		},
