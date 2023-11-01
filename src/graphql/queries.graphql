@@ -4,6 +4,10 @@ query GetPostBySlug($slug: String!) {
 		title
 		tags
 		publishedAt
+		coverImage {
+			id
+			url
+		}
 		blogContent {
 			html
 		}
