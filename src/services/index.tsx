@@ -15,10 +15,18 @@ export const sendContactForm = async (data: EmailData) => {
 		});
 		if (request.status === 200) {
 			alert("wyślany");
-		} else {
-			throw new Error("błąd");
 		}
 	} catch (error) {
 		throw new Error("błąd");
+	}
+};
+
+export const getInstagramData = async () => {
+	try {
+		const res = await fetch(`http://localhost:3000/api/instagram`);
+		const data: unknown = await res.json();
+		return data;
+	} catch (error) {
+		throw error;
 	}
 };
