@@ -35,7 +35,7 @@ export default function Contact() {
 	};
 
 	return (
-		<div className="flex min-h-screen flex-col items-center gap-10 p-8">
+		<main className="flex min-h-screen flex-col items-center gap-10 p-8">
 			{JSON.stringify(values)}
 			<form autoComplete="off" onSubmit={(event) => void onSubmit(event)}>
 				<div>
@@ -50,6 +50,6 @@ export default function Contact() {
 					<button>Wyślij</button>
 				</div>
 			</form>
-		</div>
+		</main>
 	);
 }
