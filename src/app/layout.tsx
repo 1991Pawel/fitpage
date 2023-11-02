@@ -1,9 +1,9 @@
 import "./globals.css";
 
-import { Rajdhani } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
 
-const openSans = Rajdhani({
+const openSans = Montserrat({
 	subsets: ["latin"],
 	display: "swap",
 	weight: ["400", "700"],
