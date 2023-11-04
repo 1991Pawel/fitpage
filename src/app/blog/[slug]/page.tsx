@@ -22,17 +22,24 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 	});
 
 	const postHtml = data?.post?.blogContent?.html;
+const postImageUrl = data.post?.coverImage?.url;
+	const postImageAlt = data?.post?.title;
+	const renderImage = postImageUrl && postImageAlt;
+	
 
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between p-12">
+			{renderImage && (
 			<Image
 				className="w-4/4 block h-auto"
-				src={data.post?.coverImage.url ?? ""}
+				src={postImageUrl}
 				width={1000}
 				height={500}
 				layout="cover"
-				alt={data?.post?.title ?? ""}
+				alt={postImageAlt}
 			/>
+			)}
+			
 			<section>{postHtml && <div dangerouslySetInnerHTML={{ __html: postHtml }} />}</section>
 		</main>
 	);
