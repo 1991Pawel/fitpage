@@ -11,6 +11,7 @@ query GetPostBySlug($slug: String!) {
 		}
 		blogContent {
 			html
+			json
 		}
 	}
 }

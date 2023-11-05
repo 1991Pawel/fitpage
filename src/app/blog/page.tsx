@@ -8,7 +8,6 @@ export default async function Blog() {
 		query: GetAllPostsDocument,
 	});
 	const posts = data.posts;
-
 	return (
 		<main className="flex min-h-screen flex-col items-center gap-10 p-8">
 			{posts.map((post) => (

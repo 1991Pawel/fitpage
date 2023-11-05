@@ -11,6 +11,12 @@ dependencies:
   '@apollo/experimental-nextjs-app-support':
     specifier: ^0.4.3
     version: 0.4.3(@apollo/client@3.8.0-rc.2)(next@13.5.2)(react@18.2.0)
+  '@graphcms/rich-text-html-renderer':
+    specifier: ^0.3.0
+    version: 0.3.0
+  '@graphcms/rich-text-types':
+    specifier: ^0.5.0
+    version: 0.5.0
   '@next/env':
     specifier: ^13.5.6
     version: 13.5.6
@@ -762,6 +768,20 @@ packages:
   /@eslint/js@8.50.0:
     resolution: {integrity: sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  /@graphcms/rich-text-html-renderer@0.3.0:
+    resolution: {integrity: sha512-la7dAMEUAIRB6ZGaDrUhYiUSvRNRCIIbPfpJSvGeLqQI0iIYsEALlwnp/01xhCjZhmjJFAwtIL02X9thWoeB0Q==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@graphcms/rich-text-types': 0.5.0
+      escape-html: 1.0.3
+    dev: false
+
+  /@graphcms/rich-text-types@0.5.0:
+    resolution: {integrity: sha512-3oKVp2V1f9zYn9dYpLvePeu/8w8nQhZyv3FWm7yUtY/AlVXRwU3HJtIXvvdwAkmTuNANNhcDkBOzfkZaKJNADw==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
 
   /@graphql-codegen/add@5.0.0(graphql@16.8.1):
     resolution: {integrity: sha512-ynWDOsK2yxtFHwcJTB9shoSkUd7YXd6ZE57f0nk7W5cu/nAgxZZpEsnTPEpZB/Mjf14YRGe2uJHQ7AfElHjqUQ==}
@@ -2612,6 +2632,10 @@ packages:
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
+
+  /escape-html@1.0.3:
+    resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
+    dev: false
 
   /escape-string-regexp@1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}

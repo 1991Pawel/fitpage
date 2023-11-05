@@ -12,6 +12,8 @@
 	"dependencies": {
 		"@apollo/client": "3.8.0-rc.2",
 		"@apollo/experimental-nextjs-app-support": "^0.4.3",
+		"@graphcms/rich-text-html-renderer": "^0.3.0",
+		"@graphcms/rich-text-types": "^0.5.0",
 		"@next/env": "^13.5.6",
 		"@types/node": "20.6.3",
 		"@types/nodemailer": "^6.4.13",
