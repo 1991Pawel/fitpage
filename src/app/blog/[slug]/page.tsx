@@ -18,10 +18,11 @@ export const generateMetadata = async ({ params }: { params: { slug: string } })
 	};
 };
 
-const renderers: {
-  h1: ({ children }: { children: string }) => string;
-} = {
-  h1: ({ children }) => `<h1 class="text-4xl font-bold text-gray-800 my-6 bg-gray-100 p-4 rounded">${children}</h1>`
+interface RenderersProps  {
+children:string
+}
+const renderers = {
+  h1: ({ children }:RenderersProps) => `<h1 class="text-4xl font-bold text-gray-800 my-6 bg-gray-100 p-4 rounded">${children}</h1>`
 };
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
