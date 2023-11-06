@@ -1,5 +1,7 @@
 import { NavLink } from "@/ui/atoms/NavLink";
+import { Paragraph } from "@/ui/atoms/Paragraph";
 import { SectionTitle } from "@/ui/atoms/SectionTitle";
+import { Button } from "@/ui/atoms/Button";
 
 export default function Home() {
 	return (
@@ -8,10 +10,11 @@ export default function Home() {
 			<SectionTitle>
 				Dlaczego wybierzesz mnie <span className="text-orange">mnie?</span>
 			</SectionTitle>
-			<section className="h-96">01</section>
-			<section className="h-96">02</section>
-			<section className="h-96">03</section>
-			<section id="2" className="h-96"></section>
+			<Paragraph>
+				Lorem ipsum dolor sit amet.
+			</Paragraph>
+			<Button primary>Zapisz się na treing</Button>
+			
 		</main>
 	);
 }
