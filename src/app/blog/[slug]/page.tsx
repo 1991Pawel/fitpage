@@ -24,16 +24,6 @@ interface RenderersProps {
 const renderers = {
 	h2: ({ children }: RenderersProps) =>
 		`<h2 class="text-orange font-semibold mb-5">${children}</h2>`,
-	h3: ({ children }: RenderersProps) =>
-		`<h3 class="text-orange mb- font-semibold">${children}</h3>`,
-	h4: ({ children }: RenderersProps) =>
-		`<h4 class="text-orange mb-2 font-semibold">${children}</h4>`,
-	h5: ({ children }: RenderersProps) =>
-		`<h5 class="text-orange mb-2 font-semibold">${children}</h5>`,
-	h6: ({ children }: RenderersProps) =>
-		`<h6 class="text-orange mb-2 font-semibold">${children}</h6>`,
-	p: ({ children }: RenderersProps) => `<p class="text-black">${children}</p>`,
-	ol: ({ children }: RenderersProps) => `<ol class="text-black list-decimal">${children}</ol>`,
 };
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
@@ -53,19 +43,26 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 	const render = astToHtmlString({ content, renderers });
 
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between bg-white p-12">
-			<h1 className="text-4xl font-semibold text-black">{postTitle}</h1>
-			{renderImage && (
-				<Image
-					className="w-4/4 block h-auto"
-					src={postImageUrl}
-					width={1000}
-					height={500}
-					layout="cover"
-					alt={postTitle}
-				/>
-			)}
-			{render && <div className="mt-20 text-2xl " dangerouslySetInnerHTML={{ __html: render }} />}
+		<main className=" flex min-h-screen flex-col items-center justify-between bg-white p-12">
+			<div className="container mx-auto">
+				<h1 className="text-4xl font-semibold text-black">{postTitle}</h1>
+				{renderImage && (
+					<Image
+						className="w-full"
+						src={postImageUrl}
+						width={1000}
+						height={500}
+						layout="cover"
+						alt={postTitle}
+					/>
+				)}
+				{render && (
+					<div
+						className="prose lg:prose-xl mt-20 text-2xl"
+						dangerouslySetInnerHTML={{ __html: render }}
+					/>
+				)}
+			</div>
 		</main>
 	);
 }
