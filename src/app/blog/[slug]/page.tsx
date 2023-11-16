@@ -33,6 +33,7 @@ const renderers = {
 	h6: ({ children }: RenderersProps) =>
 		`<h6 class="text-orange mb-2 font-semibold">${children}</h6>`,
 	p: ({ children }: RenderersProps) => `<p class="text-black">${children}</p>`,
+	ol: ({ children }: RenderersProps) => `<ol class="text-black list-decimal">${children}</ol>`,
 };
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
@@ -52,9 +53,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 	const render = astToHtmlString({ content, renderers });
 
 	return (
-		<main className="bg-white flex min-h-screen flex-col items-center justify-between p-12">
-			<h1 className="text-black text-4xl font-semibold">{postTitle}</h1>
-			<h2>{}</h2>
+		<main className="flex min-h-screen flex-col items-center justify-between bg-white p-12">
+			<h1 className="text-4xl font-semibold text-black">{postTitle}</h1>
 			{renderImage && (
 				<Image
 					className="w-4/4 block h-auto"
