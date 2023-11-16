@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {type ElementNode } from '@graphcms/rich-text-types';
+import { type ElementNode } from "@graphcms/rich-text-types";
 import { astToHtmlString } from "@graphcms/rich-text-html-renderer";
 import { getClient } from "@/lib/client";
 import { type GetPostBySlugQuery, GetPostBySlugDocument } from "@/gql/graphql";
@@ -18,11 +18,21 @@ export const generateMetadata = async ({ params }: { params: { slug: string } })
 	};
 };
 
-interface RenderersProps  {
-children:string
+interface RenderersProps {
+	children: string;
 }
 const renderers = {
-  h1: ({ children }:RenderersProps) => `<h1 class="text-4xl font-bold text-gray-800 my-6 bg-gray-100 p-4 rounded">${children}</h1>`
+	h2: ({ children }: RenderersProps) =>
+		`<h2 class="text-orange font-semibold mb-5">${children}</h2>`,
+	h3: ({ children }: RenderersProps) =>
+		`<h3 class="text-orange mb- font-semibold">${children}</h3>`,
+	h4: ({ children }: RenderersProps) =>
+		`<h4 class="text-orange mb-2 font-semibold">${children}</h4>`,
+	h5: ({ children }: RenderersProps) =>
+		`<h5 class="text-orange mb-2 font-semibold">${children}</h5>`,
+	h6: ({ children }: RenderersProps) =>
+		`<h6 class="text-orange mb-2 font-semibold">${children}</h6>`,
+	p: ({ children }: RenderersProps) => `<p class="text-black">${children}</p>`,
 };
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
@@ -31,30 +41,31 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 		variables: { slug: params.slug },
 	});
 
-interface ContentType {
-	 children: Array<ElementNode>;
-}
+	interface ContentType {
+		children: Array<ElementNode>;
+	}
 
-const postImageUrl = data.post?.coverImage?.url;
-	const postImageAlt = data?.post?.title;
-	const renderImage = postImageUrl && postImageAlt;
-	const content = data.post?.blogContent?.json as ContentType; 
-	const render =  astToHtmlString({content,renderers});
+	const postImageUrl = data.post?.coverImage?.url;
+	const postTitle = data?.post?.title;
+	const renderImage = postImageUrl && postTitle;
+	const content = data.post?.blogContent?.json as ContentType;
+	const render = astToHtmlString({ content, renderers });
 
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-12">
+		<main className="bg-white flex min-h-screen flex-col items-center justify-between p-12">
+			<h1 className="text-black text-4xl font-semibold">{postTitle}</h1>
+			<h2>{}</h2>
 			{renderImage && (
-			<Image
-				className="w-4/4 block h-auto"
-				src={postImageUrl}
-				width={1000}
-				height={500}
-				layout="cover"
-				alt={postImageAlt}
-			/>
+				<Image
+					className="w-4/4 block h-auto"
+					src={postImageUrl}
+					width={1000}
+					height={500}
+					layout="cover"
+					alt={postTitle}
+				/>
 			)}
-				{render && <div dangerouslySetInnerHTML={{ __html: render }} />}
-	
+			{render && <div className="mt-20 text-2xl " dangerouslySetInnerHTML={{ __html: render }} />}
 		</main>
 	);
 }
