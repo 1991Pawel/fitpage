@@ -3,6 +3,7 @@ import { Paragraph } from "@/ui/atoms/Paragraph";
 import { SectionTitle } from "@/ui/atoms/SectionTitle";
 import { Button } from "@/ui/atoms/Button";
 import { RoundedIcon } from "@/ui/atoms/RoundedIcon";
+import TestLogo from "@/ui/svgs/envelop.svg";
 
 export default function Home() {
 	return (

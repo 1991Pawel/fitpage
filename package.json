@@ -34,6 +34,7 @@
 		"@graphql-codegen/cli": "5.0.0",
 		"@graphql-codegen/client-preset": "4.1.0",
 		"@graphql-typed-document-node/core": "^3.2.0",
+		"@svgr/webpack": "^8.1.0",
 		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.7.2",
 		"@typescript-eslint/parser": "^6.7.2",
