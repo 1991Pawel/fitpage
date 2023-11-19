@@ -1,3 +1,6 @@
-export const Paragraph = ({ children }: React.PropsWithChildren) => {
-	return <p className="sm:text-2xl lg:text-8xl">{children}</p>;
+export const Paragraph = ({
+	children,
+	className,
+}: React.PropsWithChildren<{ className?: string }>) => {
+	return <p className={`sm:text-sm lg:text-8xl ${className || ""}`}>{children}</p>;
 };
