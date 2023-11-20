@@ -1,11 +1,13 @@
 import Logo from "@/ui/svgs/logo.svg";
-import { Container } from "@/ui/atoms/Contianer";
+import style from "./header.module.css";
+import { Container } from "@/ui/components/Container/Contianer";
+
 export const Header = () => {
 	return (
-		<header className="fixed left-0 right-0 flex h-[60px] items-center justify-between">
+		<header className={style.header}>
 			<Container>
-				<div className="h-[28px] w-[73px]  lg:h-[58px] lg:w-[153px]">
-					<Logo width={"100%"} height={"100%"} />
+				<div className="">
+					<Logo />
 				</div>
 				<button className="hamburger">
 					<span className="line"></span>

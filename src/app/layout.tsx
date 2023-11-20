@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { Montserrat } from "next/font/google";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
-import { Header } from "@/ui/atoms/Header";
+import { Header } from "@/ui/components/Header/Header";
 const openSans = Montserrat({
 	subsets: ["latin"],
 	display: "swap",

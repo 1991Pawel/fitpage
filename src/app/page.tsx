@@ -1,27 +1,23 @@
-import { NavLink } from "@/ui/atoms/NavLink";
-import { Paragraph } from "@/ui/atoms/Paragraph";
-import { SectionTitle } from "@/ui/atoms/SectionTitle";
-import { Button } from "@/ui/atoms/Button";
-import { RoundedIcon } from "@/ui/atoms/RoundedIcon";
+import { NavLink } from "@/ui/components/NavLink";
+import { Paragraph } from "@/ui/components/Paragraph";
+import { SectionTitle } from "@/ui/components/SectionTitle";
+import { Button } from "@/ui/components/Button/Button";
+import { RoundedIcon } from "@/ui/components/RoundedIcon";
 import TestLogo from "@/ui/svgs/envelop.svg";
+import style from "./page.module.css";
 
 export default function Home() {
 	return (
-		<main
-			className="bg-cover bg-center bg-no-repeat"
-			style={{ backgroundImage: 'url("/assets/home/intro-mobile-gradient.png")' }}
-		>
-			<section className="min-h-[612px]">
+		<main>
+			<section className={style.intro}>
 				<header>
 					<span>Trener Personalny</span>
-					<h1 className="text-normal text-center text-3xl font-semibold text-orange">
+					<h1>
 						DAWID
 						<br /> CIBOROWSKI
 					</h1>
-					<div className="m-auto flex w-[280px] flex-col items-center justify-center">
-						<Paragraph className="mb-4 text-center">
-							Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!
-						</Paragraph>
+					<div>
+						<Paragraph>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</Paragraph>
 						<Button primary>Zapisz się na treing</Button>
 					</div>
 					<picture>
