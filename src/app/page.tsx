@@ -4,6 +4,21 @@ import { Button } from "@/ui/components/Button/Button";
 import { Container } from "@/ui/components/Container/Contianer";
 import { SocialBar } from "@/ui/components/SocialBar/SocialBar";
 
+const galleryImage = [
+	{
+		mobile: "/assets/home/gallery-01-mobile.jpg",
+		desktop: "/assets/home/gallery-01-mobile.jpg",
+	},
+	{
+		mobile: "/assets/home/gallery-02-mobile.jpg",
+		desktop: "/assets/home/gallery-02-mobile.jpg",
+	},
+	{
+		mobile: "/assets/home/gallery-03-mobile.jpg",
+		desktop: "/assets/home/gallery-03-mobile.jpg",
+	},
+];
+
 export default function Home() {
 	return (
 		<main className={style.home}>
@@ -61,12 +76,39 @@ export default function Home() {
 							zmienić w swoim życiu.
 						</Paragraph>
 					</article>
-					<div className={style.welcomeImageWrapper}>
+					{/* <div className={style.welcomeImageWrapper}>
 						<img
 							src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
 							alt="alt"
 						/>
-					</div>
+					</div> */}
+				</Container>
+			</section>
+			<section className={style.gallery}>
+				<div className={style.galleryInner}>
+					{galleryImage.map((image, index) => (
+						<div key={index} className={style.galleryImageWrapper}>
+							<picture>
+								<source media="(min-width: 1020px)" srcSet={image.desktop} />
+
+								<img src={image.mobile} alt="Dawid Ciborowski Trener Białystok" />
+							</picture>
+						</div>
+					))}
+				</div>
+			</section>
+			<section className={style.about}>
+				<Container>
+					<Paragraph>
+						Jako trener personalny stawiam na ciągły rozwój a moim celem jest pozytywna zmiana w
+						życiu osoby, z którą współpracuje zarówno w aspekcie fizycznym, zdrowotnym jak i
+						mentalnym.
+					</Paragraph>
+					<Paragraph>
+						Jako trener personalny stawiam na ciągły rozwój a moim celem jest pozytywna zmiana w
+						życiu osoby, z którą współpracuje zarówno w aspekcie fizycznym, zdrowotnym jak i
+						mentalnym.
+					</Paragraph>
 				</Container>
 			</section>
 		</main>
