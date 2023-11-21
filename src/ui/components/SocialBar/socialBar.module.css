@@ -1,6 +1,6 @@
 .socialBar {
 	min-height: 50px;
-	background: var(--color-white);
+	background: var(--white-color);
 
 	display: flex;
 	flex-direction: row;

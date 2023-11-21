@@ -1,6 +1,7 @@
 import Link from "next/link"; // Importuj next/link przed importem pliku CSS Modules
 import style from "./navigation.module.css";
 import Logo from "@/ui/svgs/logo.svg";
+import cls from "classnames";
 
 const navLinks = [
 	{
@@ -25,9 +26,13 @@ const navLinks = [
 	},
 ];
 
-export const Navigation = () => {
+export const Navigation = ({ isActive }: { isActive: boolean }) => {
+	const navClass = {
+		active: cls(style.navigation),
+		base: cls(style.navigation, style.active),
+	};
 	return (
-		<nav className={style.navigation}>
+		<nav className={isActive ? navClass.active : navClass.base}>
 			<ul className={style.navigationList}>
 				<Link href={"/"}>
 					<li className={style.logoWrapper}>
