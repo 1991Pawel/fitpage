@@ -1,9 +1,7 @@
-import { NavLink } from "@/ui/components/NavLink";
 import { Paragraph } from "@/ui/components/Paragraph";
-import { SectionTitle } from "@/ui/components/SectionTitle";
+
 import { Button } from "@/ui/components/Button/Button";
-import { RoundedIcon } from "@/ui/components/RoundedIcon";
-import TestLogo from "@/ui/svgs/envelop.svg";
+
 import style from "./page.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 
