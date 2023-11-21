@@ -1,0 +1,16 @@
+.hamburger {
+	height: 32px;
+	width: 32px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3px;
+	padding: 6px 8px;
+}
+.hamburgerLine {
+	width: 100%;
+	height: 2px;
+	background: var(--primary-color);
+	display: block;
+}

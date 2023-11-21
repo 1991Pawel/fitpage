@@ -1,4 +1,6 @@
-.header {
-	height: 100px;
-	background: #000;
+.container {
+	padding: 0 24px;
+	max-width: 1300px;
+	margin: 0 auto;
+	height: 100%;
 }

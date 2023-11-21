@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+	--primary-color: #ff4c00;
+	--gray-color: #454545;
+	--white-color: #ffffff;
+	--z-index-header: 1000;
+	--z-index-navigation: 1001;
 }
 
+.layout {
+	padding-top: 60px;
+}
 body {
 }

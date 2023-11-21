@@ -1,0 +1,29 @@
+.navigation {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: var(--white-color);
+	z-index: var(--z-index-navigation);
+}
+.navigationList {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	gap: 50px;
+	padding-top: 60px;
+}
+.navigationListItem {
+	font-size: 20px;
+	color: var(--gray-color);
+}
+.logoWrapper {
+	height: 36px;
+	width: 94px;
+	margin-bottom: 20px;
+}
+.logoWrapper svg {
+	height: 100%;
+	width: 100%;
+}
