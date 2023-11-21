@@ -1,7 +1,7 @@
-import Logo from "@/ui/svgs/logo.svg";
 import style from "./header.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Hamburger } from "@/ui/components/Hamburger/Hamburger";
+import Logo from "@/ui/svgs/logo.svg";
 
 export const Header = () => {
 	return (

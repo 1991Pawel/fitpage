@@ -1,8 +1,6 @@
-import { Paragraph } from "@/ui/components/Paragraph";
-
-import { Button } from "@/ui/components/Button/Button";
-
 import style from "./page.module.css";
+import { Paragraph } from "@/ui/components/Paragraph";
+import { Button } from "@/ui/components/Button/Button";
 import { Container } from "@/ui/components/Container/Contianer";
 
 export default function Home() {
@@ -21,7 +19,7 @@ export default function Home() {
 							<Paragraph className={style.introDescription}>
 								Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!
 							</Paragraph>
-							<Button primary>Zapisz się na treing</Button>
+							<Button primary>Zapisz się na trening</Button>
 						</div>
 					</Container>
 				</header>
