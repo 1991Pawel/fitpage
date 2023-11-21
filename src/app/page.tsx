@@ -5,21 +5,29 @@ import { Button } from "@/ui/components/Button/Button";
 import { RoundedIcon } from "@/ui/components/RoundedIcon";
 import TestLogo from "@/ui/svgs/envelop.svg";
 import style from "./page.module.css";
+import { Container } from "@/ui/components/Container/Contianer";
 
 export default function Home() {
 	return (
-		<main>
+		<main className={style.home}>
 			<section className={style.intro}>
-				<header>
-					<span>Trener Personalny</span>
-					<h1>
-						DAWID
-						<br /> CIBOROWSKI
-					</h1>
-					<div>
-						<Paragraph>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</Paragraph>
-						<Button primary>Zapisz się na treing</Button>
-					</div>
+				<header className={style.introHeader}>
+					<Container>
+						<div className={style.introHeaderInner}>
+							<span className={style.introSpecial}>Trener Personalny</span>
+							<h1 className={style.introTitle}>
+								DAWID
+								<br /> CIBOROWSKI
+							</h1>
+
+							<Paragraph className={style.introDescription}>
+								Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!
+							</Paragraph>
+							<Button primary>Zapisz się na treing</Button>
+						</div>
+					</Container>
+				</header>
+				<div className={style.introImage}>
 					<picture>
 						<source
 							media="(min-width: 1020px)"
@@ -31,24 +39,8 @@ export default function Home() {
 							alt="Dawid Ciborowski Trener Białystok"
 						/>
 					</picture>
-					{/* <RoundedIcon iconSrc="/assets/icons/envelop.svg" alt="envelop" /> */}
-				</header>
+				</div>
 			</section>
-			{/* <NavLink count={1} name="blog" href="#2" /> */}
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>{" "}
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<SectionTitle>Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!</SectionTitle>
-			<Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
 		</main>
 	);
 }

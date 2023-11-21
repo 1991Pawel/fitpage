@@ -6,6 +6,7 @@
 	right: 0;
 	top: 0;
 	z-index: var(--z-index-header);
+	background: var(--white-color);
 }
 .headerInner {
 	display: flex;

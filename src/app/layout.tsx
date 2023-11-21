@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html className={openSans.className} lang="pl">
 			<body>
-				<Navigation />
+				{/* <Navigation /> */}
 				<div className="layout">
 					<Header />
 					<ApolloWrapper>{children}</ApolloWrapper>
