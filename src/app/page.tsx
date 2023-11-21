@@ -2,6 +2,7 @@ import style from "./page.module.css";
 import { Paragraph } from "@/ui/components/Paragraph";
 import { Button } from "@/ui/components/Button/Button";
 import { Container } from "@/ui/components/Container/Contianer";
+import { SocialBar } from "@/ui/components/SocialBar/SocialBar";
 
 export default function Home() {
 	return (
@@ -37,6 +38,7 @@ export default function Home() {
 					</picture>
 				</div>
 			</section>
+			<SocialBar />
 		</main>
 	);
 }
