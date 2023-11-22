@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import { useState } from "react";
+// import { useState } from "react";
 import { Montserrat } from "next/font/google";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
 import { Header } from "@/ui/components/Header/Header";
