@@ -97,3 +97,57 @@
 .about {
 	padding: 20px 0;
 }
+
+.offers {
+	background: url("/assets/home/offers-mobile-gradient.png");
+	/* background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 0px;
+	background-size: 100% 953px; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+}
+
+.offersTitle {
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--primary-color);
+
+	margin-top: 60px;
+}
+
+.offerCards {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px 0;
+}
+.offerCardItem {
+	padding: 12px 14px;
+
+	border-radius: 10px;
+	background: var(--white-color);
+}
+.offerCardHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+.offerCardItemTitle {
+	font-weight: 600;
+	color: var(--black-color);
+}
+.offerCardIcon {
+	height: 40px;
+	width: 38px;
+}
+.offerCardIcon svg {
+	width: 100%;
+	height: 100%;
+}
+.whyMe li {
+	border: 1px solid black;
+}
