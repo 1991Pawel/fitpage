@@ -1,7 +1,7 @@
-import Link from "next/link"; // Importuj next/link przed importem pliku CSS Modules
+import Link from "next/link";
+import cls from "classnames";
 import style from "./navigation.module.css";
 import Logo from "@/ui/svgs/logo.svg";
-import cls from "classnames";
 
 const navLinks = [
 	{

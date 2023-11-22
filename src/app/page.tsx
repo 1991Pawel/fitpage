@@ -165,7 +165,7 @@ export default function Home() {
 						</h2>
 						<ul className={style.offerCards}>
 							{offersItems.map(({ title, icon, desc }) => (
-								<li className={style.offerCardItem}>
+								<li key={title} className={style.offerCardItem}>
 									<div className={style.offerCardHeader}>
 										<span className={style.offerCardIcon}>{icon}</span>
 										<h3 className={style.offerCardItemTitle}>{title}</h3>
@@ -186,7 +186,7 @@ export default function Home() {
 						</h2>
 						<ul className={style.offerCards}>
 							{whyMeItems.map(({ title, desc }) => (
-								<li className={style.offerCardItem}>
+								<li key={title} className={style.offerCardItem}>
 									<div className={style.offerCardHeader}>
 										<h3 className={style.offerCardItemTitle}>{title}</h3>
 									</div>
