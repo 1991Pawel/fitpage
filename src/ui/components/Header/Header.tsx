@@ -3,10 +3,6 @@ import { Container } from "@/ui/components/Container/Contianer";
 import { Hamburger } from "@/ui/components/Hamburger/Hamburger";
 import Logo from "@/ui/svgs/logo.svg";
 
-interface HeaderProps {
-	handleOpenNavigation: () => void;
-}
-
 export const Header = () => {
 	return (
 		<header className={style.header}>
