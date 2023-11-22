@@ -13,10 +13,10 @@ const openSans = Montserrat({
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-	const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+	// const [isNavigationOpen, setIsNavigationOpen] = useState(false);
 
-	const handleOpenNavigation = () => setIsNavigationOpen(true);
-	const handleCloseNavigation = () => setIsNavigationOpen(false);
+	// const handleOpenNavigation = () => setIsNavigationOpen(true);
+	// const handleCloseNavigation = () => setIsNavigationOpen(false);
 
 	return (
 		<html className={openSans.className} lang="pl">
