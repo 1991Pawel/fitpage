@@ -36,6 +36,8 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	--tablet-width: 768px;
+	--desktop-width: 1024px;
 }
 /*
 	5. Improve media defaults

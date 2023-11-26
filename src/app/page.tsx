@@ -143,18 +143,21 @@ export default function Home() {
 				</div>
 			</section>
 			<section className={style.about}>
-				<Container>
-					<Paragraph>
-						Jako trener personalny stawiam na ciągły rozwój a moim celem jest pozytywna zmiana w
-						życiu osoby, z którą współpracuje zarówno w aspekcie fizycznym, zdrowotnym jak i
-						mentalnym.
-					</Paragraph>
-					<Paragraph>
-						Jako trener personalny stawiam na ciągły rozwój a moim celem jest pozytywna zmiana w
-						życiu osoby, z którą współpracuje zarówno w aspekcie fizycznym, zdrowotnym jak i
-						mentalnym.
-					</Paragraph>
-				</Container>
+				<div className={style.aboutContent}>
+					<Container>
+						<Paragraph>
+							Jako trener personalny stawiam na ciągły rozwój a moim celem jest pozytywna zmiana w
+							życiu osoby, z którą współpracuje zarówno w aspekcie fizycznym, zdrowotnym jak i
+							mentalnym.
+						</Paragraph>
+						<Paragraph>
+							Podczas trwania naszej współpracy osiągniecie Twojego celu jest moim priorytetem. Przy
+							pomocy dostępnego sprzętu w siłowni CityFit w Białymstoku, nauczę Cię poprawnie
+							wykonywać ćwiczenia, dzięki którym efektywnie zmienimy wygląd Twojej
+							sylwetki.Zapraszam na treningi personalne!
+						</Paragraph>
+					</Container>
+				</div>
 			</section>
 			<section className={style.offers}>
 				<Container>
@@ -185,9 +188,10 @@ export default function Home() {
 							mój program
 						</h2>
 						<ul className={style.offerCards}>
-							{whyMeItems.map(({ title, desc }) => (
+							{whyMeItems.map(({ title, desc }, index) => (
 								<li key={title} className={style.offerCardItem}>
 									<div className={style.offerCardHeader}>
+										<span className={style.offerCardCounter}>0{index + 1}</span>
 										<h3 className={style.offerCardItemTitle}>{title}</h3>
 									</div>
 									<Paragraph>{desc}</Paragraph>
