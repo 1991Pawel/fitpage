@@ -4,6 +4,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
 import { Header } from "@/ui/components/Header/Header";
+import { Footer } from "@/ui/components/Footer/Footer";
 // import { Navigation } from "@/ui/components/Navigation/Navigation";
 
 const openSans = Montserrat({
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<div className="layout">
 					<Header />
 					<ApolloWrapper>{children}</ApolloWrapper>
+					<Footer />
 				</div>
 			</body>
 		</html>

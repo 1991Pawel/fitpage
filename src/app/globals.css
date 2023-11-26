@@ -5,6 +5,7 @@
 :root {
 	--primary-color: #ff4c00;
 	--gray-color: #454545;
+	--gray-light-color: #393f4f;
 	--white-color: #ffffff;
 	--black-color: #000;
 	--z-index-header: 1000;
