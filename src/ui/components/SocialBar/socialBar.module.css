@@ -8,20 +8,7 @@
 	align-items: center;
 	gap: 16px;
 }
-.navigationListItem {
-	width: fit-content;
-	display: flex;
-	flex-direction: row;
 
-	width: 32px;
-	height: 32px;
-	background: var(--primary-color);
-	border-radius: 50%;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .navigationListItem a {
 	display: block;
 }

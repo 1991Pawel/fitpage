@@ -1,3 +1,28 @@
 .footer {
 	background: var(--gray-light-color);
+	padding: 12px 0 16px;
+	color: var(--white-color);
+	text-align: center;
+}
+.footerTitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+.footerDesc {
+	font-size: 16px;
+}
+.disclaimer {
+	font-size: 10px;
+	opacity: 0.5;
+}
+
+.listItem {
+	list-style: none;
+}
+.list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin: 12px 0;
 }
