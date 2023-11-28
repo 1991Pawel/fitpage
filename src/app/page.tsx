@@ -1,12 +1,13 @@
 import style from "./page.module.css";
 import { Paragraph } from "@/ui/components/Paragraph";
-import { Button } from "@/ui/components/Button/Button";
 import { Container } from "@/ui/components/Container/Contianer";
 import { SocialBar } from "@/ui/components/SocialBar/SocialBar";
 import OfferIcon01 from "@/ui/svgs/offer-icon-01.svg";
 import OfferIcon02 from "@/ui/svgs/offer-icon-02.svg";
 import OfferIcon03 from "@/ui/svgs/offer-icon-03.svg";
 import OfferIcon04 from "@/ui/svgs/offer-icon-04.svg";
+import { IntroSection } from "@/ui/modules/homepage/IntroSection/IntroSection";
+import { WelcomeSection } from "@/ui/modules/homepage/WelcomeSection/WelcomeSection";
 
 const galleryImage = [
 	{
@@ -67,7 +68,8 @@ const whyMeItems = [
 export default function Home() {
 	return (
 		<main className={style.home}>
-			<section className={style.intro}>
+			<IntroSection />
+			{/* <section className={style.intro}>
 				<header className={style.introHeader}>
 					<Container>
 						<div className={style.introHeaderInner}>
@@ -97,38 +99,10 @@ export default function Home() {
 						/>
 					</picture>
 				</div>
-			</section>
+			</section> */}
 			<SocialBar />
-			<section className={style.welcome}>
-				<Container>
-					<article className={style.weolcomeInner}>
-						<div className={style.welcomeContent}>
-							<h2 className={style.welcomeContentTitle}>Cześć!</h2>
-							<Paragraph>
-								Mam na imię Dawid i&nbsp;jestem certyfikowanym Instruktorem Sportu ze specjalizacją
-								Trener Personalny z&nbsp;Białegostoku.
-							</Paragraph>
-							<Paragraph>
-								Z wykształcenia jestem Inżynierem budownictwa, ale nie zajmuję się budowaniem mostów
-								tylko pomagam ludziom budować ich wymarzone sylwetki.
-							</Paragraph>
-						</div>
-						<Paragraph className={style.welcomeContentLast}>
-							Moja przygoda z siłownią rozpoczęła się kiedy byłem nastolatkiem i trwa do dzisiaj.
-							Początkowo było to hobby, które z biegiem lat przerodziło się w pasje i stało się
-							częścią życia. Po niemalże 15 latach praktyki oraz poszerzaniu wiedzy merytorycznej
-							postanowiłem zacząć dzielić się swoim doświadczeniem z innymi osobami, które chcą coś
-							zmienić w swoim życiu.
-						</Paragraph>
-					</article>
-					{/* <div className={style.welcomeImageWrapper}>
-						<img
-							src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
-							alt="alt"
-						/>
-					</div> */}
-				</Container>
-			</section>
+			<WelcomeSection />
+
 			<section className={style.gallery}>
 				<div className={style.galleryInner}>
 					{galleryImage.map((image, index) => (
@@ -199,6 +173,15 @@ export default function Home() {
 							))}
 						</ul>
 					</article>
+				</Container>
+			</section>
+			<section className={style.blogSection}>
+				<Container>
+					<h2 className={style.blogSectiontitle}>Blog</h2>
+					<Paragraph>Znajdziesz tu codzienną dawkę motywacji oraz przydatnych wskazówek.</Paragraph>
+					<Paragraph>
+						Zapraszam do zapoznania się z moim blogiem i odkrywania inspirujących treści!
+					</Paragraph>
 				</Container>
 			</section>
 		</main>

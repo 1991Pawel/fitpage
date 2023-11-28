@@ -1,0 +1,22 @@
+.welcome {
+}
+.welcomeContent {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px 0;
+}
+.weolcomeInner {
+	display: grid;
+}
+.welcomeContentTitle {
+	font-size: 32px;
+	background: linear-gradient(90deg, #ff1501 0%, #ffa001 98.39%);
+	background-clip: text;
+	font-weight: 600;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.welcomeContentLast {
+	grid-column: 1 / -1;
+}
