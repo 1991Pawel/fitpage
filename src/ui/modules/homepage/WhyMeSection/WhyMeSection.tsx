@@ -1,6 +1,7 @@
 import style from "./whyMeSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph";
+import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const whyMeItems = [
 	{
@@ -25,10 +26,7 @@ export const WhyMeSection = () => (
 	<section className={style.whyMe}>
 		<Container>
 			<article>
-				<h2 className={style.whyMeTitle}>
-					Zwiedź <br />
-					mój program
-				</h2>
+				<SectionTitle>korzyści współpracy</SectionTitle>
 				<ul className={style.whyMeCards}>
 					{whyMeItems.map(({ title, desc }, index) => (
 						<li key={title} className={style.whyMeCardItem}>

@@ -5,6 +5,7 @@ import OfferIcon03 from "@/ui/svgs/offer-icon-03.svg";
 import OfferIcon04 from "@/ui/svgs/offer-icon-04.svg";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph";
+import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const offersItems = [
 	{
@@ -33,10 +34,7 @@ export const OffersSection = () => (
 	<section className={style.offers}>
 		<Container>
 			<article>
-				<h2 className={style.offersTitle}>
-					Zwiedź <br />
-					mój program
-				</h2>
+				<SectionTitle>CO ZE MNĄ OSIĄGNIESZ</SectionTitle>
 				<ul className={style.offerCards}>
 					{offersItems.map(({ title, icon, desc }) => (
 						<li key={title} className={style.offerCardItem}>

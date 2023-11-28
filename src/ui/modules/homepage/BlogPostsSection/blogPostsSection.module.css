@@ -1,55 +1,12 @@
-.whyMe {
-	background: url("/assets/home/offers-mobile-gradient.png");
-	/* background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center 0px;
-	background-size: 100% 953px; */
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top right;
+.blogSection {
+	background: #ffe7dc;
+	padding: 20px 0;
 }
-
-.whyMeTitle {
-	font-size: 24px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: var(--primary-color);
+.blogTitle {
+	margin-bottom: 16px;
 }
-
-.whyMeCards {
+.blogContent {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	padding: 20px 0;
-}
-.whyMeCardItem {
-	padding: 12px 14px;
-
-	border-radius: 10px;
-	background: var(--white-color);
-}
-.whyMeCardItem p {
-	font-size: 14px;
-}
-.whyMeCardHeader {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 20px;
-	margin-bottom: 10px;
-}
-.whyMeCardItemTitle {
-	font-weight: 600;
-	color: var(--black-color);
-	width: 50%;
-	line-height: 20px;
-}
-.whyMeCardIcon {
-	height: 40px;
-	width: 38px;
-}
-.whyMeCardCounter {
-	font-size: 20px;
-	font-weight: 600;
-	color: var(--primary-color);
 }
