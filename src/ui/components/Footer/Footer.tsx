@@ -1,6 +1,6 @@
 import style from "./footer.module.css";
-import { Container } from "../Container/Contianer";
-import { RoundedIcon } from "../RoundedIcon/RoundedIcon";
+import { Container } from "@/ui/components/Container/Contianer";
+import { RoundedIcon } from "@/ui/components/RoundedIcon/RoundedIcon";
 import InstagramIcon from "@/ui/svgs/instagram.svg";
 import FacebookIcon from "@/ui/svgs/facebook.svg";
 import EnvelopIcon from "@/ui/svgs/envelop.svg";
