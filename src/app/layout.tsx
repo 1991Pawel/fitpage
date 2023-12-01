@@ -10,7 +10,7 @@ import { Footer } from "@/ui/components/Footer/Footer";
 const openSans = Montserrat({
 	subsets: ["latin"],
 	display: "swap",
-	weight: ["400", "600", "700"],
+	weight: ["400", "500", "600", "700"],
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
