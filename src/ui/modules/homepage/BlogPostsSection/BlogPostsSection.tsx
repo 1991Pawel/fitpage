@@ -41,7 +41,7 @@ export const BlogPostsSection = () => (
 			</article>
 			<ul className={style.blogPosts}>
 				{fakeBlogData.map(({ title, bgUrl }) => (
-					<li className={style.blogPost}>
+					<li key={title} className={style.blogPost}>
 						<img className={style.blogPostImage} src={bgUrl} alt={title} />
 						<div className={style.blogPostContent}>
 							<h3 className={style.blogPostTitle}>{title}</h3>
