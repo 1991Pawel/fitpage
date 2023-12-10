@@ -2,7 +2,7 @@ import style from "./blogPostsSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
-
+import Link from "next/link";
 const fakeBlogData = [
 	{
 		title:
@@ -42,10 +42,16 @@ export const BlogPostsSection = () => (
 			<ul className={style.blogPosts}>
 				{fakeBlogData.map(({ title, bgUrl }) => (
 					<li key={title} className={style.blogPost}>
-						<img className={style.blogPostImage} src={bgUrl} alt={title} />
-						<div className={style.blogPostContent}>
-							<h3 className={style.blogPostTitle}>{title}</h3>
-						</div>
+						<Link
+							href={"/blog/dlaczego-warto-uwzglednic-trening-silowy-w-programie-fitness"}
+							className={style.blogLink}
+						>
+							<img className={style.blogPostImage} src={bgUrl} alt={title} />
+
+							<div className={style.blogPostContent}>
+								<h3 className={style.blogPostTitle}>{title}</h3>
+							</div>
+						</Link>
 					</li>
 				))}
 			</ul>
