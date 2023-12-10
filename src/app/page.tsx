@@ -8,6 +8,7 @@ import { AboutSection } from "@/ui/modules/homepage/AboutSection/AboutSection";
 import { OffersSection } from "@/ui/modules/homepage/OffersSection/OffersSection";
 import { WhyMeSection } from "@/ui/modules/homepage/WhyMeSection/WhyMeSection";
 import { BlogPostsSection } from "@/ui/modules/homepage/BlogPostsSection/BlogPostsSection";
+import { ContactSection } from "@/ui/modules/homepage/ContactSection/ContactSection";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 			<OffersSection />
 			<WhyMeSection />
 			<BlogPostsSection />
+			<ContactSection />
 		</main>
 	);
 }
