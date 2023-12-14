@@ -9,6 +9,7 @@ import { OffersSection } from "@/ui/modules/homepage/OffersSection/OffersSection
 import { WhyMeSection } from "@/ui/modules/homepage/WhyMeSection/WhyMeSection";
 import { BlogPostsSection } from "@/ui/modules/homepage/BlogPostsSection/BlogPostsSection";
 import { ContactSection } from "@/ui/modules/homepage/ContactSection/ContactSection";
+import { FormSection } from "@/ui/modules/homepage/FormSection/FormSection";
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<WhyMeSection />
 			<BlogPostsSection />
 			<ContactSection />
+			<FormSection />
 		</main>
 	);
 }
