@@ -1,5 +1,5 @@
-import style from "./blogPostsSection.module.css";
 import Link from "next/link";
+import style from "./blogPostsSection.module.css";
 import TwistedArrow from "@/ui/svgs/twisted-arrow.svg";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph";

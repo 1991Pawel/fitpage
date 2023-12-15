@@ -1,7 +1,7 @@
 import style from "./form.module.css";
 import { Input } from "@/ui/components/Input/Input";
 import { Textarea } from "@/ui/components/Textarea/Textarea";
-import { Button } from "../Button/Button";
+import { Button } from "@/ui/components/Button/Button";
 
 interface Form {
 	name: string;
