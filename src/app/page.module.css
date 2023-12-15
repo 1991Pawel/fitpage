@@ -8,3 +8,12 @@
 .whyMe li {
 	border: 1px solid black;
 }
+
+@media screen and (min-width: 720px) {
+	.home {
+		background: url("/assets/home/intro-desktop-gradient.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 250px 50px;
+	}
+}

@@ -1,14 +1,14 @@
 .blogSection {
 	background: #ffe7dc;
-	padding: 20px 0;
+	padding: 32px 0;
 }
 .blogTitle {
-	margin-bottom: 16px;
 }
 .blogContent {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	margin: 16px 0;
 }
 .blogPosts {
 	display: flex;
@@ -34,7 +34,8 @@
 	left: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.59);
-
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 	padding: 14px 10px;
 }
 .blogPostTitle {
@@ -47,4 +48,14 @@
 	overflow: hidden;
 	-webkit-line-clamp: 2;
 	text-overflow: ellipsis;
+}
+.blogPostHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blogPostHeader svg {
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
 }

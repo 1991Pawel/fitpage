@@ -15,9 +15,12 @@ export const IntroSection = () => (
 					</h1>
 
 					<Paragraph className={style.introDescription}>
-						Zrób pierwszy krok na swojej drodze do wymarzonej sylwetki!
+						Zrób pierwszy krok na swojej drodze do&nbsp;wymarzonej sylwetki!
 					</Paragraph>
-					<Button primary>Zapisz się na trening</Button>
+					<div className={style.ctaWrapper}>
+						<Button primary>Zapisz się na trening</Button>
+						<Button>Dowiedz się więcej</Button>
+					</div>
 				</div>
 			</Container>
 		</header>

@@ -1,8 +1,9 @@
 import style from "./blogPostsSection.module.css";
+import Link from "next/link";
+import TwistedArrow from "@/ui/svgs/twisted-arrow.svg";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
-import Link from "next/link";
 const fakeBlogData = [
 	{
 		title:
@@ -49,7 +50,10 @@ export const BlogPostsSection = () => (
 							<img className={style.blogPostImage} src={bgUrl} alt={title} />
 
 							<div className={style.blogPostContent}>
-								<h3 className={style.blogPostTitle}>{title}</h3>
+								<header className={style.blogPostHeader}>
+									<h3 className={style.blogPostTitle}>{title}</h3>
+									<TwistedArrow />
+								</header>
 							</div>
 						</Link>
 					</li>

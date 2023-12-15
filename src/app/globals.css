@@ -10,6 +10,10 @@
 	--black-color: #000;
 	--z-index-header: 1000;
 	--z-index-navigation: 1001;
+
+	/* --mobile-breakpoint: 720px;
+	--tablet-breakpoint: 1020px;
+	--desktop-breakpoint: 1280px; */
 }
 
 .layout {
