@@ -11,6 +11,9 @@
 	gap: 10px;
 }
 
+.ctaWrapper button:nth-of-type(2) {
+	display: none;
+}
 .introHeader {
 }
 .introHeaderInner {
@@ -67,6 +70,9 @@
 	.intro {
 		display: flex;
 	}
+	.ctaWrapper button:nth-of-type(2) {
+		display: block;
+	}
 }
 @media screen and (min-width: 1020px) {
 	.introTitle {
@@ -88,11 +94,16 @@
 	.introTitle {
 		font-size: 96px;
 	}
+	.introSpecial {
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
 	.introDescription {
 		font-size: 24px;
 	}
 	.ctaWrapper {
 		flex-direction: row;
 		min-width: 600px;
+		margin-top: 30px;
 	}
 }

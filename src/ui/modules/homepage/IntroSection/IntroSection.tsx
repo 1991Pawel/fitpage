@@ -18,7 +18,7 @@ export const IntroSection = () => (
 						Zrób pierwszy krok na swojej drodze do&nbsp;wymarzonej sylwetki!
 					</Paragraph>
 					<div className={style.ctaWrapper}>
-						<Button primary>Zapisz się na trening</Button>
+						<Button primary>Bezpłatna konsultacja</Button>
 						<Button>Dowiedz się więcej</Button>
 					</div>
 				</div>

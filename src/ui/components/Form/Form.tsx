@@ -14,7 +14,7 @@ export const Form = () => {
 			<Input label="Imię" name="name" type="text" />
 			<Input label="Email" name="email" type="text" />
 			<Textarea label="Email" name="message" />
-			<Button>Wyślij</Button>
+			<Button primary>Wyślij</Button>
 		</form>
 	);
 };
