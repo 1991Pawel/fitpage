@@ -1,7 +1,7 @@
 import style from "./contactSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
-import { Paragraph } from "@/ui/components/Paragraph";
+import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 import PhoneIcon from "@/ui/svgs/phone.svg";
 import PinIcon from "@/ui/svgs/pin.svg";
 

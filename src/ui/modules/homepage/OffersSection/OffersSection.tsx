@@ -4,7 +4,7 @@ import OfferIcon02 from "@/ui/svgs/offer-icon-02.svg";
 import OfferIcon03 from "@/ui/svgs/offer-icon-03.svg";
 import OfferIcon04 from "@/ui/svgs/offer-icon-04.svg";
 import { Container } from "@/ui/components/Container/Contianer";
-import { Paragraph } from "@/ui/components/Paragraph";
+import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const offersItems = [

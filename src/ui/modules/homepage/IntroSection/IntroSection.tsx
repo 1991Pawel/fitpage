@@ -1,7 +1,7 @@
 import style from "./introSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Button } from "@/ui/components/Button/Button";
-import { Paragraph } from "@/ui/components/Paragraph";
+import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 
 export const IntroSection = () => (
 	<section className={style.intro}>

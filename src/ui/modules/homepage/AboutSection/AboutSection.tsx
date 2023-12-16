@@ -1,6 +1,6 @@
 import style from "./aboutSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
-import { Paragraph } from "@/ui/components/Paragraph";
+import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 
 export const AboutSection = () => (
 	<section className={style.about}>

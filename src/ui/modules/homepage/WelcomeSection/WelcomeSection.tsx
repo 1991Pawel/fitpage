@@ -1,14 +1,14 @@
 import style from "./welcomeSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
-import { Paragraph } from "@/ui/components/Paragraph";
+import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 
 export const WelcomeSection = () => (
 	<section className={style.welcome}>
 		<Container>
+			<h2 className={style.welcomeContentTitle}>Cześć!</h2>
 			<article className={style.weolcomeInner}>
 				<div className={style.welcomeContent}>
-					<h2 className={style.welcomeContentTitle}>Cześć!</h2>
-					<Paragraph>
+					<Paragraph className={style.specialParagraph}>
 						Mam na imię Dawid i&nbsp;jestem certyfikowanym Instruktorem Sportu ze specjalizacją
 						Trener Personalny z&nbsp;Białegostoku.
 					</Paragraph>
@@ -17,7 +17,7 @@ export const WelcomeSection = () => (
 						tylko pomagam ludziom budować ich wymarzone sylwetki.
 					</Paragraph>
 				</div>
-				<Paragraph className={style.welcomeContentLast}>
+				<Paragraph>
 					Moja przygoda z siłownią rozpoczęła się kiedy byłem nastolatkiem i trwa do dzisiaj.
 					Początkowo było to hobby, które z biegiem lat przerodziło się w pasje i stało się częścią
 					życia. Po niemalże 15 latach praktyki oraz poszerzaniu wiedzy merytorycznej postanowiłem
