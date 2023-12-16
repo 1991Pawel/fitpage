@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import type { Dispatch, SetStateAction } from "react";
 import cls from "classnames";
 import style from "./hamburger.module.css";
 

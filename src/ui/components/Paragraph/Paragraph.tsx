@@ -1,5 +1,5 @@
-import style from "./paragraph.module.css";
 import cls from "classnames";
+import style from "./paragraph.module.css";
 
 export const Paragraph = ({
 	children,
