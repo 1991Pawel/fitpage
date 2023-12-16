@@ -31,3 +31,24 @@
 	width: 100%;
 	object-fit: cover;
 }
+
+@media screen and (min-width: 720px) {
+	.galleryInner {
+		grid-template-columns: 1fr 0.8fr;
+	}
+	.galleryImageWrapper:last-of-type {
+		grid-column: 2 / -1;
+		/* border-radius: 0; */
+
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.galleryImageWrapper:first-of-type {
+		grid-row: 1 / span 2;
+	}
+}
+@media screen and (min-width: 1020px) {
+	.galleryInner {
+		grid-template-columns: 1fr 700px;
+	}
+}
