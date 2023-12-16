@@ -1,8 +1,8 @@
+import Image from "next/image";
 import style from "./aboutSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 import Arrow from "@/ui/svgs/disclaimer-arrow.svg";
-import Image from "next/image";
 
 export const AboutSection = () => (
 	<section className={style.about}>
