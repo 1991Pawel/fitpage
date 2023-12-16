@@ -73,6 +73,11 @@
 	.ctaWrapper button:nth-of-type(2) {
 		display: block;
 	}
+	.introImage {
+		margin: 0 auto;
+		width: 70%;
+		max-width: 410px;
+	}
 }
 @media screen and (min-width: 1020px) {
 	.introTitle {
@@ -88,6 +93,9 @@
 
 	.introHeader {
 		align-self: center;
+	}
+	.ctaWrapper {
+		gap: 32px;
 	}
 }
 @media screen and (min-width: 1280px) {
@@ -105,5 +113,14 @@
 		flex-direction: row;
 		min-width: 600px;
 		margin-top: 30px;
+	}
+	.introImage {
+		width: 100%;
+		max-width: 470px;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.introImage {
+		max-width: 620px;
 	}
 }

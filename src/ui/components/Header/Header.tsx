@@ -32,8 +32,7 @@ export const Header = () => {
 							<Logo />
 						</div>
 					</Link>
-					{openNav && <Navigation isActive={openNav} />}
-
+					<Navigation isActive={openNav} />
 					<Hamburger active={openNav} setOpenNav={setOpenNav} />
 				</div>
 			</Container>

@@ -5,16 +5,12 @@ import Logo from "@/ui/svgs/logo.svg";
 
 const navLinks = [
 	{
-		title: "Strona główna",
-		href: "strona-glowna",
-	},
-	{
 		title: "O mnie",
-		href: "o-mnie",
+		href: "#o-mnie",
 	},
 	{
-		title: "Treningi",
-		href: "treningi",
+		title: "Oferta",
+		href: "#oferta",
 	},
 	{
 		title: "Blog",
@@ -28,8 +24,8 @@ const navLinks = [
 
 export const Navigation = ({ isActive }: { isActive: boolean }) => {
 	const navClass = {
-		active: cls(style.navigation),
-		base: cls(style.navigation, style.active),
+		base: cls(style.navigation),
+		active: cls(style.navigation, style.active),
 	};
 	return (
 		<nav className={isActive ? navClass.active : navClass.base}>

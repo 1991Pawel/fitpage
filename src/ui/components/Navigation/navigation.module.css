@@ -8,10 +8,15 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	display: none;
 }
+.active {
+	display: block;
+}
+
 .navigationList {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
@@ -30,4 +35,36 @@
 .logoWrapper svg {
 	height: 100%;
 	width: 100%;
+}
+
+@media screen and (min-width: 1020px) {
+	.navigation {
+		display: flex;
+		justify-content: center;
+		height: auto;
+		width: auto;
+		background: transparent;
+		position: static;
+		width: 100%;
+	}
+	.navigationList {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		gap: 100px;
+
+		align-self: center;
+		width: max-content;
+	}
+	.logoWrapper {
+		display: none;
+	}
+	.navigationListItem {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.navigation {
+		width: 70%;
+	}
 }
