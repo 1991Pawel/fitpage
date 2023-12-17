@@ -12,10 +12,10 @@ const navLinks = [
 		title: "Oferta",
 		href: "#oferta",
 	},
-	{
-		title: "Blog",
-		href: "#blog",
-	},
+	// {
+	// 	title: "Blog",
+	// 	href: "#blog",
+	// },
 	{
 		title: "Kontakt",
 		href: "#kontakt",
