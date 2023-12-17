@@ -1,5 +1,5 @@
-import style from "./contactSection.module.css";
 import Image from "next/image";
+import style from "./contactSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
