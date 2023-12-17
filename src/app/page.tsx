@@ -1,5 +1,5 @@
+import type { Metadata } from "next";
 import style from "./page.module.css";
-import { Metadata } from "next";
 import { SocialBar } from "@/ui/components/SocialBar/SocialBar";
 import { IntroSection } from "@/ui/modules/homepage/IntroSection/IntroSection";
 import { WelcomeSection } from "@/ui/modules/homepage/WelcomeSection/WelcomeSection";
