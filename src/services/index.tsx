@@ -3,7 +3,7 @@ interface EmailData {
 	message: string;
 	subject: string;
 }
-export const sendContactForm = async (data: EmailData) => {
+export const sendContactForm = async (data: EmailData, onSuccess: () => void) => {
 	try {
 		const request = await fetch("/api/contact", {
 			method: "POST",
@@ -14,7 +14,7 @@ export const sendContactForm = async (data: EmailData) => {
 			},
 		});
 		if (request.status === 200) {
-			alert("Wiadomość została wysłana");
+			onSuccess();
 		}
 	} catch (error) {
 		alert("Ups... coś poszło nie tak");

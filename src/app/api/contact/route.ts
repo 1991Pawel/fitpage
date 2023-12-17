@@ -5,6 +5,7 @@ interface EmailData {
 	email: string;
 	message: string;
 	subject: string;
+	name: string;
 }
 export async function POST(request: NextRequest): Promise<Response> {
 	try {
@@ -13,7 +14,7 @@ export async function POST(request: NextRequest): Promise<Response> {
 		const res = await transporter.sendMail({
 			...mailOptions,
 			subject: json.subject,
-			html: `<h1>Email od : ${json.email}</h1><p>${json.message}</p>`,
+			html: `<h1>Email od : ${json.email}</h1><p>${json.name}</p><p>${json.message}</p>`,
 		});
 		return NextResponse.json({ message: "ok", data: res }, { status: 200 });
 	} catch (error) {
