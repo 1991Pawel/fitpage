@@ -2,7 +2,6 @@ import style from "./formSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 import { Form } from "@/ui/components/Form/Form";
-
 export const FormSection = () => (
 	<section className={style.formSection}>
 		<Container>

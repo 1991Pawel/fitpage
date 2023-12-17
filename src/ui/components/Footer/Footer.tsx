@@ -27,7 +27,7 @@ export const Footer = () => {
 	return (
 		<footer className={style.footer}>
 			<Container>
-				<h5 className={style.footerTitle}>Dawid Ciborowski</h5>
+				<h3 className={style.footerTitle}>Dawid Ciborowski</h3>
 				<p className={style.footerDesc}>Trener personalny</p>
 
 				<ul className={style.list}>

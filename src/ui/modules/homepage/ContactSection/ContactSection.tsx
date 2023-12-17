@@ -1,4 +1,5 @@
 import style from "./contactSection.module.css";
+import Image from "next/image";
 import { Container } from "@/ui/components/Container/Contianer";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
@@ -41,14 +42,13 @@ export const ContactSection = () => (
 					</div>
 				</div>
 				<div className={style.map}>
-					<picture>
-						<source media="(min-width: 1020px)" srcSet="/assets/home/contact-mobile-map.jpg" />
-
-						<img
-							src="/assets/home/contact-mobile-map.jpg"
-							alt="Dawid Ciborowski Trener Białystok"
-						/>
-					</picture>
+					<Image
+						src="/assets/home/contact-mobile-map.jpg"
+						layout="responsive"
+						alt="Dawid Ciborowski"
+						width={750}
+						height={379}
+					/>
 				</div>
 			</div>
 		</Container>
