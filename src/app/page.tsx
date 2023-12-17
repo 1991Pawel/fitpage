@@ -1,5 +1,5 @@
 import style from "./page.module.css";
-
+import { Metadata } from "next";
 import { SocialBar } from "@/ui/components/SocialBar/SocialBar";
 import { IntroSection } from "@/ui/modules/homepage/IntroSection/IntroSection";
 import { WelcomeSection } from "@/ui/modules/homepage/WelcomeSection/WelcomeSection";
@@ -10,6 +10,12 @@ import { WhyMeSection } from "@/ui/modules/homepage/WhyMeSection/WhyMeSection";
 import { BlogPostsSection } from "@/ui/modules/homepage/BlogPostsSection/BlogPostsSection";
 import { ContactSection } from "@/ui/modules/homepage/ContactSection/ContactSection";
 import { FormSection } from "@/ui/modules/homepage/FormSection/FormSection";
+
+export const metadata: Metadata = {
+	title: "Dawid - Trener Personalny w Białymstoku | Treningi Personalne",
+	description:
+		"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",
+};
 
 export default function Home() {
 	return (
