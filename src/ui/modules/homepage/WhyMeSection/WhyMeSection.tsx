@@ -5,20 +5,28 @@ import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const whyMeItems = [
 	{
-		title: "Profesjonalizm",
-		desc: "Z latami praktyki oraz zdobytą wiedzą w dziedzinie treningu, zdrowego stylu życia i żywienia, mam umiejętność tworzenia spersonalizowanych planów treningowych, uwzględniających Twoje indywidualne cele.",
+		title: "Poprawa Samopoczucia i Redukcja Stresu",
+		desc: "Trening wyzwoli w Tobie endorfiny, które zredukują Twój stres i poprawią nastrój, przez co poprawisz swoją równowagę psychospołeczną.",
 	},
 	{
-		title: "Motywacja i wsparcie",
-		desc: "Jestem gotowy wspierać Cię na każdym etapie Twojej drogi do osiągnięcia celów fitness. Moja motywacja jest skierowana na pomoc Ci w przezwyciężaniu trudności i utrzymaniu determinacji.",
+		title: "Inwestycja w zdrowie",
+		desc: "Trening oraz odpowiednie żywienie pomogą w zapobieganiu wielu chorobom i utrzymaniu młodszego wyglądu. Najlepsza inwestycja to inwestycja w siebie!",
 	},
 	{
-		title: "Podejście Indywidualne",
-		desc: "Angażuję się w każdego klienta indywidualnie, starając się zrozumieć Twoje unikalne cele i wymagania. Skupiam się na każdym szczególe, aby zapewnić Ci najefektywniejsze treningi.",
+		title: "Wymarzona sylwetka",
+		desc: "Jeśli marzysz o określonych proporcjach ciała to razem ze mną, zrzucisz zbędne kilogramy, przez co poprawisz komfort swojego życia.",
 	},
 	{
-		title: "Zróżnicowany zakres umiejętności",
-		desc: "Dzięki moim umiejętnościom w różnych dziedzinach treningu, od siłowego po funkcjonalny, mogę dostosować program treningowy tak, aby jak najlepiej odpowiadał Twoim potrzebom i ambicjom.",
+		title: "Poprawa zakresu ruchu i mobilności",
+		desc: "Podczas realizowania wcześniej przyjętych założeń treningowych zwiększysz swoją mobilność oraz zakres ruchu co przełoży się na większą sprawność w życiu codziennym",
+	},
+	{
+		title: "Motywacja",
+		desc: "Jest to kluczowy element, żeby zrobić pierwszy krok. Moim celem jest, aby trening i zdrowe nawyki żywieniowe stały się integralną częścią Twojego życia, a każdy kolejny powrót na salę treningową sprawiał uśmiech na Twojej twarzy.",
+	},
+	{
+		title: "Bezpieczeństwo",
+		desc: "Podczas jednostki treningowej najważniejszą kwestią jest Twoje bezpieczeństwo. Przy współpracy z trenerem minimalizujesz ryzyko wystąpienia kontuzji",
 	},
 ];
 
@@ -26,13 +34,16 @@ export const WhyMeSection = () => (
 	<section className={style.whyMe}>
 		<Container>
 			<article>
-				<SectionTitle>korzyści współpracy</SectionTitle>
+				<SectionTitle className={style.title}>korzyści współpracy</SectionTitle>
 				<ul className={style.whyMeCards}>
 					{whyMeItems.map(({ title, desc }, index) => (
 						<li key={title} className={style.whyMeCardItem}>
 							<div className={style.whyMeCardHeader}>
-								<span className={style.whyMeCardCounter}>0{index + 1}</span>
-								<h3 className={style.whyMeCardItemTitle}>{title}</h3>
+								{/* <span className={style.whyMeCardCounter}>0{index + 1}</span> */}
+								<h3
+									dangerouslySetInnerHTML={{ __html: title }}
+									className={style.whyMeCardItemTitle}
+								/>
 							</div>
 							<Paragraph>{desc}</Paragraph>
 						</li>

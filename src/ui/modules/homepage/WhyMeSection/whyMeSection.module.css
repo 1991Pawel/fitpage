@@ -5,13 +5,6 @@
 	padding: 32px 0;
 }
 
-.whyMeTitle {
-	font-size: 24px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: var(--primary-color);
-}
-
 .whyMeCards {
 	display: flex;
 	flex-direction: column;
@@ -20,10 +13,9 @@
 }
 .whyMeCardItem {
 	padding: 12px 14px;
-
 	border-radius: 10px;
 	background: var(--white-color);
-	border: 1px solid var(--black-color);
+	box-shadow: var(--card-shadow);
 }
 .whyMeCardItem p {
 	font-size: 14px;
@@ -47,4 +39,39 @@
 	font-size: 20px;
 	font-weight: 600;
 	color: var(--primary-color);
+}
+
+@media screen and (min-width: 720px) {
+	.whyMeCards {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	}
+	.whyMeCardItem p {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 1020px) {
+	.whyMeCards {
+		margin-top: 32px;
+	}
+	.title {
+		text-align: center;
+	}
+	.whyMe {
+		padding: 60px 0;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.whyMeCards {
+		margin-top: 60px;
+	}
+	.whyMe {
+		padding: 100px 0;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.whyMe {
+		padding: 150px 0;
+	}
 }

@@ -11,7 +11,7 @@
 	--z-index-header: 1000;
 	--z-index-navigation: 1001;
 	--z-index-navigation-button: 1002;
-
+	--card-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	/* --mobile-breakpoint: 720px;
 	--tablet-breakpoint: 1020px;
 	--desktop-breakpoint: 1280px; */

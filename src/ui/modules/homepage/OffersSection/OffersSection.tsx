@@ -9,23 +9,23 @@ import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const offersItems = [
 	{
-		title: "Trening budujący masę mięśniową",
-		desc: "Trening jest przeznaczony dla tych, którzy chcą zwiększyć masę mięśniową. Obejmuje różnorodne ćwiczenia z obciążeniem, mające na celu rozwój siły i objętości mięśni, a także optymalne żywienie w celu wspierania wzrostu i regeneracji tkanek.",
+		title: "Trening personalny",
+		desc: "Jako certyfikowany trener personalny tworzę indywidualny plan treningowy uwzględniający Twoje cele, poziom zaawansowania, wiek oraz ogólną kondycję fizyczną. Dzięki najnowocześniejszym metodom treningowym oraz pełnym wsparciem z mojej strony razem przekroczymy wszelkie bariery i osiągniemy Twoje cele!",
 		icon: <OfferIcon01 />,
 	},
 	{
-		title: "Trening Cardio",
-		desc: `Program "Trening Cardio" skupia się na poprawie wydolności serca i układu krążenia. Poprzez dynamiczne sesje treningowe skupimy się na wzmocnieniu układu sercowo-naczyniowego, co przyczyni się do spalania kalorii.`,
+		title: "Trening w parze",
+		desc: `Chcesz zacząć trenować z bliską Ci osobą, a może z grupą przyjaciół chcecie spędzić aktywnie wspólny czas? Żaden problem. Moim zadaniem będzie stworzenie efektywnego i kreatywnego planu, który zbliży Was do upragnionego celu. Zaletą tego typu treningu jest oszczędność pieniędzy oraz wzajemna motywacja.`,
 		icon: <OfferIcon02 />,
 	},
 	{
-		title: "Utrata tkanki tłuszczowej",
-		desc: `Moja program utraty tkanki tłuszczowej to nie tylko treningi, ale kompleksowe podejście do transformacji twojego ciała. Ten program oferuje skuteczny zestaw ćwiczeń zaprojektowanych do maksymalnego spalania nadmiaru tłuszczu.`,
+		title: "Trening funkcjonalny",
+		desc: `Jeśli Twoim celem jest usprawnienie czynności wykonywanych w życiu codziennym. Ten rodzaj treningu jest świetnym rozwiązaniem. Dzięki treningu funkcjonalnemu Twoje ciało stanie się w pełni aktywne przy jednoczesnym wzmocnieniu wszystkich grup mięśniowych.`,
 		icon: <OfferIcon03 />,
 	},
 	{
-		title: "Dieta i plan żywieniowy",
-		desc: `Trening jest przeznaczony dla tych, którzy chcą zwiększyć masę mięśniową. Obejmuje różnorodne ćwiczenia z obciążeniem, mające na celu rozwój siły i objętości mięśni, a także optymalne żywienie w celu wspierania wzrostu i regeneracji tkanek.`,
+		title: "Spersonalizowany plan treningowy",
+		desc: `Wykonywanie poszczególnych ćwiczeń masz już  opanowane, ale Twój plan nie daje rezultatów? Po przeprowadzonej konsultacji i dogłębnej analizie ankiety, w której udzielisz szczerej odpowiedzi na szereg pytań. Stworzę plan treningowy z podziałem na poszczególne fazy w celu przygotowania maksymalnego wytrenowania w danym okresie.`,
 		icon: <OfferIcon04 />,
 	},
 ];
@@ -34,7 +34,7 @@ export const OffersSection = () => (
 	<section className={style.offers}>
 		<Container>
 			<article>
-				<SectionTitle>CO ZE MNĄ OSIĄGNIESZ</SectionTitle>
+				<SectionTitle className={style.offersTitle}>OFERTA</SectionTitle>
 				<ul className={style.offerCards}>
 					{offersItems.map(({ title, icon, desc }) => (
 						<li key={title} className={style.offerCardItem}>

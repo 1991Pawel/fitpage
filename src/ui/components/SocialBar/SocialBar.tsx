@@ -10,12 +10,12 @@ import { Container } from "@/ui/components//Container/Contianer";
 const socialLinks = [
 	{
 		title: "instagram",
-		href: "strona-glowna",
+		href: "https://www.instagram.com/ciborowski.trener/",
 		icon: <InstagramIcon />,
 	},
 	{
 		title: "facebook",
-		href: "o-mnie",
+		href: "https://www.facebook.com/profile.php?id=61552549569416",
 		icon: <FacebookIcon />,
 	},
 	{
@@ -32,12 +32,12 @@ export const SocialBar = () => {
 				<div className={style.wrapper}>
 					<div className={style.socialBarTime}>
 						<WatchIcon />
-						<p className={style.desc}>Pon-Niedz: 8.00-22.00</p>
+						<p className={style.desc}>Pon-Niedz: 6.00-23.00</p>
 					</div>
 					<ul className={style.socialBar}>
 						{socialLinks.map(({ href, title, icon }) => (
 							<li key={title}>
-								<a title={title} href={href}>
+								<a target="_blank" title={title} href={href}>
 									<RoundedIcon icon={icon} />
 								</a>
 							</li>

@@ -94,11 +94,11 @@
 	.introHeader {
 		align-self: center;
 	}
+}
+@media screen and (min-width: 1280px) {
 	.ctaWrapper {
 		gap: 32px;
 	}
-}
-@media screen and (min-width: 1280px) {
 	.introTitle {
 		font-size: 96px;
 	}

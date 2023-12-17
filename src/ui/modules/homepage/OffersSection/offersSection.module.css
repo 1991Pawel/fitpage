@@ -1,9 +1,5 @@
 .offers {
 	background: url("/assets/home/offers-mobile-gradient.png");
-	/* background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center 0px;
-	background-size: 100% 953px; */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top right;
@@ -21,12 +17,10 @@
 	flex-direction: column;
 	gap: 10px;
 	padding: 20px 0;
-	max-width: 1180px;
-	margin: 0 auto;
 }
 .offerCardItem {
 	padding: 12px 14px;
-
+	box-shadow: var(--card-shadow);
 	border-radius: 10px;
 	background: var(--white-color);
 }
@@ -64,13 +58,37 @@
 	.offers {
 		padding: 32px 0;
 	}
+	.offerCardItemTitle {
+		width: 80%;
+	}
 }
+@media screen and (min-width: 1020px) {
+	.offers {
+		background: url("/assets/home/offers-desktop-gradient.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+	.offersTitle {
+		text-align: center;
+	}
+	.offerCards {
+		padding-top: 60px;
+	}
+}
+
 @media screen and (min-width: 1280px) {
 	.offerCards {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 20px;
 	}
 	.offers {
 		padding: 100px 0;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.offers {
+		padding: 150px 0;
 	}
 }
