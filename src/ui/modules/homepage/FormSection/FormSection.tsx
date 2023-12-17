@@ -6,12 +6,19 @@ import { Form } from "@/ui/components/Form/Form";
 export const FormSection = () => (
 	<section className={style.formSection}>
 		<Container>
-			<h2>Kontakt form</h2>
-			<Paragraph>
-				Wypełnij formularz tutaj, aby skontaktować się bezpośrednio z wszelkimi pytaniami, jakie
-				mogą Cię nurtować, umówić się na konsultację. Czekam na wiadomość od Ciebie!
-			</Paragraph>
-			<Form />
+			<div className={style.formSectionInner}>
+				<div className={style.formContent}>
+					<h2>
+						Bezpłatna <br />
+						konsultacja
+					</h2>
+					<Paragraph>
+						Wypełnij formularz tutaj, aby skontaktować się bezpośrednio z wszelkimi pytaniami, jakie
+						mogą Cię nurtować, umówić się na konsultację. Czekam na wiadomość od Ciebie!
+					</Paragraph>
+				</div>
+				<Form />
+			</div>
 		</Container>
 	</section>
 );

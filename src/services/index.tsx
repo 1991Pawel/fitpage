@@ -14,9 +14,10 @@ export const sendContactForm = async (data: EmailData) => {
 			},
 		});
 		if (request.status === 200) {
-			alert("wyślany");
+			alert("Wiadomość została wysłana");
 		}
 	} catch (error) {
+		alert("Ups... coś poszło nie tak");
 		throw new Error("błąd");
 	}
 };

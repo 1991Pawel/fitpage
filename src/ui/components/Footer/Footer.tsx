@@ -8,17 +8,17 @@ import EnvelopIcon from "@/ui/svgs/envelop.svg";
 const socialLinks = [
 	{
 		title: "instagram",
-		href: "strona-glowna",
+		href: "https://www.instagram.com/ciborowski.trener/",
 		icon: <InstagramIcon />,
 	},
 	{
 		title: "facebook",
-		href: "o-mnie",
+		href: "https://www.facebook.com/profile.php?id=61552549569416",
 		icon: <FacebookIcon />,
 	},
 	{
 		title: "mail",
-		href: "mailto:example@gmail.com",
+		href: "mailto:ciborowski.trener@gmail.com",
 		icon: <EnvelopIcon />,
 	},
 ];
@@ -42,6 +42,9 @@ export const Footer = () => {
 				<p className={style.disclaimer}>
 					© 2023. Wszelkie prawa zastrzeżone przez Dawid Ciborowski
 				</p>
+				<a className={style.term} href="/polityka-prywatnosci.pdf">
+					Polityka prywatności
+				</a>
 			</Container>
 		</footer>
 	);

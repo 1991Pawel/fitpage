@@ -30,7 +30,7 @@ const fakeBlogData = [
 ];
 
 export const BlogPostsSection = () => (
-	<section className={style.blogSection}>
+	<section id="blog" className={style.blogSection}>
 		<Container>
 			<div className={style.inner}>
 				<div className={style.content}>

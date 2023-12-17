@@ -31,7 +31,7 @@ const offersItems = [
 ];
 
 export const OffersSection = () => (
-	<section className={style.offers}>
+	<section id="oferta" className={style.offers}>
 		<Container>
 			<article>
 				<SectionTitle className={style.offersTitle}>OFERTA</SectionTitle>

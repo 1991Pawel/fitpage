@@ -67,11 +67,11 @@
 		margin-top: 60px;
 	}
 	.whyMe {
-		padding: 100px 0;
+		padding-top: 100px;
 	}
 }
 @media screen and (min-width: 1600px) {
 	.whyMe {
-		padding: 150px 0;
+		padding-top: 150px;
 	}
 }

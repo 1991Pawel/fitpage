@@ -17,6 +17,10 @@
 	font-size: 10px;
 	opacity: 0.5;
 }
+.term {
+	opacity: 0.5;
+	font-size: 14px;
+}
 
 .listItem {
 	list-style: none;

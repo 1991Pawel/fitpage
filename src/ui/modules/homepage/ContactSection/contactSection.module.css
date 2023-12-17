@@ -32,3 +32,21 @@
 .contactContent strong {
 	font-weight: 600;
 }
+@media screen and (min-width: 1020px) {
+	.contactContent {
+		max-width: 900px;
+		margin: 0 auto;
+		margin-top: 32px;
+	}
+	.infoWrapper {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 370px 1fr;
+		gap: 90px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.contactContent {
+		margin-top: 60px;
+	}
+}

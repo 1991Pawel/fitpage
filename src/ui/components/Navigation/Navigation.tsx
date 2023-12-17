@@ -14,15 +14,21 @@ const navLinks = [
 	},
 	{
 		title: "Blog",
-		href: "blog",
+		href: "#blog",
 	},
 	{
 		title: "Kontakt",
-		href: "kontakt",
+		href: "#kontakt",
 	},
 ];
 
-export const Navigation = ({ isActive }: { isActive: boolean }) => {
+export const Navigation = ({
+	setOpenNav,
+	isActive,
+}: {
+	isActive: boolean;
+	setOpenNav: (x: boolean) => void;
+}) => {
 	const navClass = {
 		base: cls(style.navigation),
 		active: cls(style.navigation, style.active),
@@ -30,13 +36,13 @@ export const Navigation = ({ isActive }: { isActive: boolean }) => {
 	return (
 		<nav className={isActive ? navClass.active : navClass.base}>
 			<ul className={style.navigationList}>
-				<Link href={"/"}>
+				<Link onClick={() => setOpenNav(false)} href={"/"}>
 					<li className={style.logoWrapper}>
 						<Logo />
 					</li>
 				</Link>
 				{navLinks.map(({ href, title }) => (
-					<Link key={title} href={href}>
+					<Link onClick={() => setOpenNav(false)} key={title} href={href}>
 						<li className={style.navigationListItem}>{title}</li>
 					</Link>
 				))}

@@ -3,7 +3,7 @@ import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 
 export const WelcomeSection = () => (
-	<section className={style.welcome}>
+	<section id="o-mnie" className={style.welcome}>
 		<Container>
 			<h2 className={style.welcomeContentTitle}>Cześć!</h2>
 			<article className={style.weolcomeInner}>
