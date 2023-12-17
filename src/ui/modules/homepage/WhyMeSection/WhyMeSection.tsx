@@ -5,7 +5,7 @@ import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
 
 const whyMeItems = [
 	{
-		title: "Poprawa Samopoczucia i Redukcja Stresu",
+		title: "Poprawa Samopoczucia i&nbsp;Redukcja Stresu",
 		desc: "Trening wyzwoli w Tobie endorfiny, które zredukują Twój stres i poprawią nastrój, przez co poprawisz swoją równowagę psychospołeczną.",
 	},
 	{
@@ -17,7 +17,7 @@ const whyMeItems = [
 		desc: "Jeśli marzysz o określonych proporcjach ciała to razem ze mną, zrzucisz zbędne kilogramy, przez co poprawisz komfort swojego życia.",
 	},
 	{
-		title: "Poprawa zakresu ruchu i mobilności",
+		title: "Poprawa zakresu ruchu i&nbsp;mobilności",
 		desc: "Podczas realizowania wcześniej przyjętych założeń treningowych zwiększysz swoją mobilność oraz zakres ruchu co przełoży się na większą sprawność w życiu codziennym",
 	},
 	{
