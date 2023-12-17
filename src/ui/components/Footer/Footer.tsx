@@ -42,7 +42,11 @@ export const Footer = () => {
 				<p className={style.disclaimer}>
 					© 2023. Wszelkie prawa zastrzeżone przez Dawid Ciborowski
 				</p>
-				<a className={style.term} href="/polityka-prywatnosci.pdf">
+				<a
+					title="Przejdź do Polityki prywatności"
+					className={style.term}
+					href="/polityka-prywatnosci.pdf"
+				>
 					Polityka prywatności
 				</a>
 			</Container>
