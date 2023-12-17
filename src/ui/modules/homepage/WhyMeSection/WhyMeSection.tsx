@@ -36,7 +36,7 @@ export const WhyMeSection = () => (
 			<article>
 				<SectionTitle className={style.title}>korzyści współpracy</SectionTitle>
 				<ul className={style.whyMeCards}>
-					{whyMeItems.map(({ title, desc }, index) => (
+					{whyMeItems.map(({ title, desc }) => (
 						<li key={title} className={style.whyMeCardItem}>
 							<div className={style.whyMeCardHeader}>
 								{/* <span className={style.whyMeCardCounter}>0{index + 1}</span> */}
