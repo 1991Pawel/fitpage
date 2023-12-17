@@ -11,6 +11,7 @@ export const Hamburger = ({ setOpenNav, active }: HamburgerProps) => {
 	return (
 		<button
 			className={cls(style.hamburger, active ? style.hamburgerActive : null)}
+			aria-label="Open Navigation"
 			onClick={() => setOpenNav((prevState) => !prevState)}
 		>
 			<span className={style.hamburgerLine}></span>
