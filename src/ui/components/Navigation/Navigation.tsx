@@ -36,11 +36,11 @@ export const Navigation = ({
 	return (
 		<nav className={isActive ? navClass.active : navClass.base}>
 			<ul className={style.navigationList}>
-				<Link title="Główna strona" onClick={() => setOpenNav(false)} href={"/"}>
-					<li className={style.logoWrapper}>
+				<li className={style.logoWrapper}>
+					<Link title="Główna strona" onClick={() => setOpenNav(false)} href={"/"}>
 						<Logo />
-					</li>
-				</Link>
+					</Link>
+				</li>
 				{navLinks.map(({ href, title }) => (
 					<li key={title} className={style.navigationListItem}>
 						<Link title={title} onClick={() => setOpenNav(false)} href={href}>
