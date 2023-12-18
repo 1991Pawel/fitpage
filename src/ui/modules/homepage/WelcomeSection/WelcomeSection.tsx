@@ -1,9 +1,11 @@
 import style from "./welcomeSection.module.css";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
+import { ScrollPointer } from "@/ui/components/ScrollPointer/ScrollPointer";
 
 export const WelcomeSection = () => (
-	<section id="o-mnie" className={style.welcome}>
+	<section className={style.welcome}>
+		<ScrollPointer id="o-mnie" className={style.pointer} />
 		<Container>
 			<h2 className={style.welcomeContentTitle}>Cześć!</h2>
 			<article className={style.weolcomeInner}>

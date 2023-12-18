@@ -15,6 +15,7 @@
 	/* --mobile-breakpoint: 720px;
 	--tablet-breakpoint: 1020px;
 	--desktop-breakpoint: 1280px; */
+	scroll-behavior: smooth;
 }
 
 .layout {

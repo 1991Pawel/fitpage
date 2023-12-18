@@ -6,6 +6,7 @@ import OfferIcon04 from "@/ui/svgs/offer-icon-04.svg";
 import { Container } from "@/ui/components/Container/Contianer";
 import { Paragraph } from "@/ui/components/Paragraph/Paragraph";
 import { SectionTitle } from "@/ui/components/SectionTitle/SectionTitle";
+import { ScrollPointer } from "@/ui/components/ScrollPointer/ScrollPointer";
 
 const offersItems = [
 	{
@@ -31,7 +32,8 @@ const offersItems = [
 ];
 
 export const OffersSection = () => (
-	<section id="oferta" className={style.offers}>
+	<section className={style.offers}>
+		<ScrollPointer id="oferta" className={style.pointer} />
 		<Container>
 			<article>
 				<SectionTitle className={style.offersTitle}>OFERTA</SectionTitle>

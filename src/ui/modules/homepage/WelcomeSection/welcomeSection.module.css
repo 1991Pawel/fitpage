@@ -1,5 +1,9 @@
 .welcome {
 	padding: 32px 0;
+	position: relative;
+}
+.pointer {
+	margin-top: -90px;
 }
 .welcomeContent {
 	display: flex;
