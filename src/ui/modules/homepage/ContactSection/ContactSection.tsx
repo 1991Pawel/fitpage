@@ -48,7 +48,7 @@ export const ContactSection = () => (
 							<span className={style.icon}>
 								<EnvelopIcon />
 							</span>
-							518 331 251
+							ciborowski.trener@gmail.com
 						</a>
 					</div>
 				</div>
