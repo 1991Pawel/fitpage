@@ -28,20 +28,8 @@ export const AboutSection = () => (
 			</Container>
 		</div>
 		<div className={style.aboutGallery}>
-			<Image
-				src="/assets/home/about-01.jpg"
-				layout="responsive"
-				width={380}
-				height={680}
-				alt="Dawid Ciborowski"
-			/>
-			<Image
-				src="/assets/home/about-02.jpg"
-				layout="responsive"
-				width={380}
-				height={680}
-				alt="Dawid Ciborowski"
-			/>
+			<Image src="/assets/home/about-01.jpg" width={380} height={680} alt="Dawid Ciborowski" />
+			<Image src="/assets/home/about-02.jpg" width={380} height={680} alt="Dawid Ciborowski" />
 		</div>
 	</section>
 );
