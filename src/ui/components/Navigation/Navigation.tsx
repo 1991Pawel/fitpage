@@ -42,9 +42,11 @@ export const Navigation = ({
 					</li>
 				</Link>
 				{navLinks.map(({ href, title }) => (
-					<Link title={title} onClick={() => setOpenNav(false)} key={title} href={href}>
-						<li className={style.navigationListItem}>{title}</li>
-					</Link>
+					<li className={style.navigationListItem}>
+						<Link title={title} onClick={() => setOpenNav(false)} key={title} href={href}>
+							{title}
+						</Link>
+					</li>
 				))}
 			</ul>
 		</nav>
