@@ -42,8 +42,8 @@ export const Navigation = ({
 					</li>
 				</Link>
 				{navLinks.map(({ href, title }) => (
-					<li className={style.navigationListItem}>
-						<Link title={title} onClick={() => setOpenNav(false)} key={title} href={href}>
+					<li key={title} className={style.navigationListItem}>
+						<Link title={title} onClick={() => setOpenNav(false)} href={href}>
 							{title}
 						</Link>
 					</li>
