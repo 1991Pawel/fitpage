@@ -10,7 +10,6 @@ import { WhyMeSection } from "@/ui/modules/homepage/WhyMeSection/WhyMeSection";
 // import { BlogPostsSection } from "@/ui/modules/homepage/BlogPostsSection/BlogPostsSection";
 import { ContactSection } from "@/ui/modules/homepage/ContactSection/ContactSection";
 import { FormSection } from "@/ui/modules/homepage/FormSection/FormSection";
-
 export const metadata: Metadata = {
 	title: "Dawid - Trener Personalny w Białymstoku | Treningi Personalne",
 	themeColor: "#ffffff",
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
 		title: "Dawid - Trener Personalny w Białymstoku",
 		description:
 			"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",
-		images: "/assets/og-image.jpg",
+		images: "../../public/assets/og-image.jpg",
 	},
 
 	description:
