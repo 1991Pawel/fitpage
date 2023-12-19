@@ -3,6 +3,18 @@
 
 	max-width: 1300px;
 	margin: 0 auto;
+	overflow: hidden;
+}
+.introOverlay {
+	background: #fff;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .ctaWrapper {

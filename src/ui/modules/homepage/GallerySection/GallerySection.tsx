@@ -1,5 +1,4 @@
 import style from "./gallerySection.module.css";
-
 const galleryImage = [
 	{
 		mobile: "/assets/home/gallery-01-mobile.jpg",
