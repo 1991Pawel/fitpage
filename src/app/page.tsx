@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		title: "Dawid - Trener Personalny w Białymstoku",
 		description:
 			"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",
-		images: "../../public/assets/og-image.jpg",
+		images: "/og-image.jpg",
 	},
 
 	description:
