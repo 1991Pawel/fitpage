@@ -74,7 +74,7 @@ export const IntroSection = () => {
 			}
 		};
 		runAnimation();
-	}, [contentWrapper, overlay]);
+	}, [overlay, imageWrapper, contentWrapper]);
 	return (
 		<section className={style.intro}>
 			<div ref={overlay} className={style.introOverlay} />
