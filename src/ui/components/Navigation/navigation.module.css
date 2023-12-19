@@ -26,6 +26,11 @@
 .navigationListItem {
 	font-size: 20px;
 	color: var(--gray-color);
+	font-weight: 500;
+	transition: ease-in-out 0.3s color;
+}
+.navigationListItem:hover {
+	color: var(--primary-color);
 }
 .logoWrapper {
 	height: 36px;

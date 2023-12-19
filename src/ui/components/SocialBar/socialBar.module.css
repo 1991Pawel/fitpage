@@ -9,6 +9,12 @@
 	gap: 16px;
 	min-height: 50px;
 }
+.socialBar a {
+	transition: ease-in-out 0.3s opacity;
+}
+.socialBar a:hover {
+	opacity: 0.8;
+}
 .socialBarTime {
 	display: none;
 	color: var(--gray-color);
@@ -25,10 +31,6 @@
 	flex-shrink: 0;
 	width: 34px;
 	height: 34px;
-	display: block;
-}
-
-.navigationListItem a {
 	display: block;
 }
 

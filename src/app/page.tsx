@@ -16,7 +16,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://ciborowski-trener.pl",
 	},
+
 	openGraph: {
+		url: "https://ciborowski-trener.pl",
 		title: "Dawid - Trener Personalny w Białymstoku",
 		description:
 			"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",

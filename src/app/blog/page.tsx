@@ -14,7 +14,6 @@ export default async function Blog() {
 			{posts.map((post) => (
 				<Link href={`/blog/${post.slug}`} key={post.id}>
 					<h2 className="mb-4">{post.title}</h2>
-
 					<Image
 						className="w-4/4 block h-auto"
 						src={post.coverImage.coverImagePost[0]?.coverImage.url ?? ""}

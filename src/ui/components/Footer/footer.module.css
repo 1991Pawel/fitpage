@@ -4,6 +4,13 @@
 	color: var(--white-color);
 	text-align: center;
 }
+.footer a {
+	transition: ease-in-out 0.3s opacity;
+}
+.footer a:hover {
+	opacity: 0.8;
+}
+
 .footerTitle {
 	font-size: 20px;
 	font-weight: 600;
@@ -15,10 +22,11 @@
 }
 .disclaimer {
 	font-size: 10px;
-	opacity: 0.5;
+	opacity: 0.8;
 }
+
 .term {
-	opacity: 0.5;
+	opacity: 0.8;
 	font-size: 14px;
 }
 
