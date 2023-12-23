@@ -15,7 +15,6 @@
 		"@graphcms/rich-text-html-renderer": "^0.3.0",
 		"@graphcms/rich-text-types": "^0.5.0",
 		"@next/env": "^13.5.6",
-		"@segment/analytics-next": "^1.62.0",
 		"@types/node": "20.6.3",
 		"@types/nodemailer": "^6.4.14",
 		"@types/react": "18.2.22",
