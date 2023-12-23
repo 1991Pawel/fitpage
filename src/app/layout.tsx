@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Footer />
 				</div>
 				<FacebookPixel />
-				<Analytics />
 			</body>
+			<Analytics />
 		</html>
 	);
 }
