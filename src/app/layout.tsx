@@ -6,6 +6,7 @@ import { ApolloWrapper } from "@/lib/apollo-wrapper";
 import { Header } from "@/ui/components/Header/Header";
 import { Footer } from "@/ui/components/Footer/Footer";
 import { FacebookPixel } from "@/ui/components/FacebookPixel/FacebookPixel";
+import { Analytics } from "@/ui/components/Analytics/Analytics";
 const openSans = Montserrat({
 	subsets: ["latin"],
 	display: "swap",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Footer />
 				</div>
 				<FacebookPixel />
+				<Analytics />
 			</body>
 		</html>
 	);
