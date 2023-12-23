@@ -1,5 +1,5 @@
+/* eslint-disable */
 "use client";
-
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { analytics } from "@/lib/segment";
