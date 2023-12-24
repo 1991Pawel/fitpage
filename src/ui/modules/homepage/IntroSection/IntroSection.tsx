@@ -106,14 +106,6 @@ export const IntroSection = () => {
 					width={787}
 					height={610}
 				/>
-				{/* <picture>
-				<source media="(min-width: 1020px)" srcSet={"/assets/home/dawid-ciborowski-trener.png"} />
-
-				<img
-					src={"/assets/home/dawid-ciborowski-trener.png"}
-					alt="Dawid Ciborowski Trener Białystok"
-				/>
-			</picture> */}
 			</div>
 		</section>
 	);
