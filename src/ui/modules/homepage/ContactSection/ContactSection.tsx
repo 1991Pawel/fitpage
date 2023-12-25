@@ -59,10 +59,13 @@ export const ContactSection = () => (
 					>
 						<Image
 							src="/assets/home/contact-mobile-map.jpg"
-							layout="responsive"
+							style={{
+								width: "100%",
+								height: "auto",
+							}}
 							alt="Dawid Ciborowski"
-							width={750}
-							height={379}
+							width={1113}
+							height={450}
 						/>
 					</a>
 				</div>

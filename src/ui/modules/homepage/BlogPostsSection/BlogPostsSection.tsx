@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import style from "./blogPostsSection.module.css";
 import TwistedArrow from "@/ui/svgs/twisted-arrow.svg";
 import TwistedArrowDesktop from "@/ui/svgs/twisted-arrow-desktop.svg";
@@ -53,7 +54,15 @@ export const BlogPostsSection = () => (
 								href={"/blog/dlaczego-warto-uwzglednic-trening-silowy-w-programie-fitness"}
 								className={style.blogLink}
 							>
-								<img className={style.blogPostImage} src={bgUrl} alt={title} />
+								<Image
+									style={{
+										width: "100%",
+										height: "auto",
+									}}
+									src={bgUrl}
+									alt={title}
+								/>
+
 								<div className={style.desktopPointer}>
 									<TwistedArrowDesktop />
 								</div>
