@@ -17,6 +17,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://ciborowski-trener.pl",
 	},
+	verification: {
+		google:"ii-RoACLWzJ8MDPoGy-j1q6CpnUZDjMkvp8UO2nueag",
+	}
 
 	openGraph: {
 		url: "https://ciborowski-trener.pl",
