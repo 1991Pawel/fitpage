@@ -20,14 +20,14 @@ export const metadata: Metadata = {
 
 	openGraph: {
 		url: "https://ciborowski-trener.pl",
-		title: "Dawid - Trener Personalny w Białymstoku",
+		title: "Dawid Ciborowski - Certyfikowany Trener Personalny Białystok",
 		description:
 			"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",
 		images: "/og-image.jpg",
 	},
 
 	description:
-		"Osiągnij swoje fitness cele z doświadczonym trenerem personalnym w Białymstoku. Specjalizuję się w treningach siłowych, planowaniu diet i wspieram w dążeniu do zdrowego stylu życia. Skontaktuj się ze mną już dziś i rozpocznij transformację swojego ciała i zdrowia!",
+		"Nazywam się Dawid. Jestem certyfikowanym trenerem personalnym z Białegostoku. Nie zależnie od wieku płci czy kondycji zapraszam Cię na wspólne treningi indywidualne. Razem możemy więcej!",
 };
 
 export default function Home() {
