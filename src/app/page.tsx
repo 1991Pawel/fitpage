@@ -18,9 +18,8 @@ export const metadata: Metadata = {
 		canonical: "https://ciborowski-trener.pl",
 	},
 	verification: {
-		google:"ii-RoACLWzJ8MDPoGy-j1q6CpnUZDjMkvp8UO2nueag",
-	}
-
+		google: "ii-RoACLWzJ8MDPoGy-j1q6CpnUZDjMkvp8UO2nueag",
+	},
 	openGraph: {
 		url: "https://ciborowski-trener.pl",
 		title: "Dawid Ciborowski - Certyfikowany Trener Personalny Białystok",
