@@ -11,7 +11,7 @@ import { WhyMeSection } from "@/ui/modules/homepage/WhyMeSection/WhyMeSection";
 import { ContactSection } from "@/ui/modules/homepage/ContactSection/ContactSection";
 import { FormSection } from "@/ui/modules/homepage/FormSection/FormSection";
 export const metadata: Metadata = {
-	title: "Dawid - Trener Personalny w Białymstoku | Treningi Personalne",
+	title: "Dawid Ciborowski - Certyfikowany Trener Personalny Białystok",
 	metadataBase: new URL("https://ciborowski-trener.pl"),
 	themeColor: "#ffffff",
 	alternates: {
