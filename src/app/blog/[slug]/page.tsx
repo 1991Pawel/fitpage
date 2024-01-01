@@ -26,9 +26,11 @@ const renderers = {
 		`<h2 class="text-orange font-semibold mb-5">${children}</h2>`,
 };
 
+export const revalidate = 3600;
 export default async function BlogPost({ params }: { params: { slug: string } }) {
 	const { data } = await getClient().query<GetPostBySlugQuery>({
 		query: GetPostBySlugDocument,
+
 		variables: { slug: params.slug },
 	});
 
@@ -58,7 +60,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 				)}
 				{render && (
 					<div
-						className="prose lg:prose-xl mt-20 text-2xl"
+						className="prose mt-20 text-2xl lg:prose-xl"
 						dangerouslySetInnerHTML={{ __html: render }}
 					/>
 				)}
