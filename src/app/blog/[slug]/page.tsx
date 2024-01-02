@@ -45,9 +45,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 	const render = astToHtmlString({ content, renderers });
 
 	return (
-		<main className=" flex min-h-screen flex-col items-center justify-between bg-white p-12">
+		<main className=" flex min-h-screen flex-col items-center justify-between bg-white p-4">
 			<div className="container mx-auto">
-				<h1 className="text-4xl font-semibold text-black">{postTitle}</h1>
 				{renderImage && (
 					<Image
 						className="w-full"
@@ -58,9 +57,11 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 						alt={postTitle}
 					/>
 				)}
+				<h1 className=" mt-12 text-4xl font-semibold text-orange">{postTitle}</h1>
 				{render && (
 					<div
-						className="prose mt-20 text-2xl lg:prose-xl"
+						className="text-2 1xl prose
+						mt-20 lg:prose-xl"
 						dangerouslySetInnerHTML={{ __html: render }}
 					/>
 				)}

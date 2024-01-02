@@ -6,11 +6,11 @@ import Logo from "@/ui/svgs/logo.svg";
 const navLinks = [
 	{
 		title: "O mnie",
-		href: "#o-mnie",
+		href: "/#o-mnie",
 	},
 	{
 		title: "Oferta",
-		href: "#oferta",
+		href: "/#oferta",
 	},
 	// {
 	// 	title: "Blog",
@@ -18,7 +18,7 @@ const navLinks = [
 	// },
 	{
 		title: "Kontakt",
-		href: "#kontakt",
+		href: "/#kontakt",
 	},
 ];
 
