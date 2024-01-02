@@ -81,11 +81,11 @@ export const IntroSection = () => {
 			<header className={style.introHeader}>
 				<Container>
 					<div ref={contentWrapper} className={style.introHeaderInner}>
-						<span className={style.introSpecial}>Trener Personalny</span>
-						<h1 className={style.introTitle}>
+						<h1 className={style.introSpecial}>Trener Personalny Białystok</h1>
+						<span className={style.introTitle}>
 							DAWID
 							<br /> CIBOROWSKI
-						</h1>
+						</span>
 
 						<Paragraph className={style.introDescription}>
 							Zrób pierwszy krok na swojej drodze do&nbsp;wymarzonej sylwetki!
