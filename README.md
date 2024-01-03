@@ -1,6 +1,6 @@
-##Personal Trainer Website using Next.js and GraphQL
+## Personal Trainer Website using Next.js and GraphQL
 
-#Technologies Used
+# Technologies Used
 - Next.js
 - GraphQL
 - Typescript
