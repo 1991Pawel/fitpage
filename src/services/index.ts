@@ -2,6 +2,7 @@ interface EmailData {
 	email: string;
 	message: string;
 	subject: string;
+	phone: string;
 }
 export const sendContactForm = async (data: EmailData, onSuccess: () => void) => {
 	try {

@@ -5,6 +5,9 @@ interface Input {
 	type: string;
 	label: string;
 	value: string;
+	pattern?: string;
+	placeholder?: string;
+	required?: boolean;
 
 	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

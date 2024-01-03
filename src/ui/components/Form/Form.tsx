@@ -16,6 +16,7 @@ interface EmailData {
 	message: string;
 	subject: string;
 	name: string;
+	phone: string;
 }
 
 const initialValue = {
@@ -23,10 +24,12 @@ const initialValue = {
 	message: "",
 	subject: "Wiadomość z formularza",
 	name: "",
+	phone: "",
 };
 export const Form = () => {
 	const [values, setValues] = useState<EmailData>({
 		email: "",
+		phone: "",
 		name: "",
 		message: "",
 		subject: "Wiadomość z formularza",
@@ -46,6 +49,7 @@ export const Form = () => {
 			email: values.email,
 			subject: values.subject,
 			message: values.message,
+			phone: values.phone,
 		};
 		await sendContactForm(payload, onSuccess);
 	};
@@ -58,13 +62,30 @@ export const Form = () => {
 	};
 	return (
 		<form autoComplete="off" onSubmit={(event) => void onSubmit(event)} className={style.form}>
-			<Input value={values.name} handleChange={handleChange} label="Imię" name="name" type="text" />
+			<Input
+				value={values.name}
+				handleChange={handleChange}
+				placeholder="Jan"
+				label="Imię"
+				name="name"
+				type="text"
+			/>
 			<Input
 				value={values.email}
 				handleChange={handleChange}
 				label="Email"
 				name="email"
 				type="email"
+				placeholder="jan.kowalski@gmail.com"
+			/>
+			<Input
+				value={values.phone}
+				handleChange={handleChange}
+				label="Telefon*"
+				name="phone"
+				type="tel"
+				placeholder="501 502 503"
+				required={false}
 			/>
 			<Textarea
 				value={values.message}
