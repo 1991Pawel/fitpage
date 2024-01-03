@@ -1,3 +1,18 @@
+##Personal Trainer Website using Next.js and GraphQL
+
+#Technologies Used
+- Next.js
+- GraphQL
+- Typescript
+- GSAP
+
+I learned:
+- how to use codegen
+- basic use next 13 with app dir
+- how to add FacebookPixel
+  
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
